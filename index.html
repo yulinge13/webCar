@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li {
+            height: 50px;
+            width: 200px;
+            line-height: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="name">
+    <input type="text" id="state">
+    <input type="text" id="largeArea">
+    <input type="text" id="province">
+    <input type="text" id="prefectureLevelCity">
+    <input type="text" id="address">
+    <input type="text" id="tel">
+    <button id="upBtn">BTN</button>
+</body>
+
+</html>
+<!-- <script>
+    const btn = document.querySelector("#btn")
+    btn.addEventListener("click", handleClick)
+    var handle = throttle(doSomething, 1500)
+
+    function handleClick(e) {
+        handle()
+    }
+
+    function doSomething() {
+        console.log(11111111111);
+    }
+
+    function debounce(fun, time, immediate = true) {
+        let timer = null
+        return function (args) {
+            if (timer) clearInterval(timer)
+            if (immediate) {
+                if (!timer) {
+                    fun(args)
+                }
+                timer = setTimeout(() => {
+                    timer = null
+                }, time)
+            }
+        }
+    }
+
+    function throttle(fun, delay = 500) {
+        let timer = null;
+        let previous = 0;
+        return function (args) {
+            let now = Date.now();
+            let remaining = delay - (now - previous); //距离规定时间,还剩多少时间
+            let that = this;
+            let _args = args;
+            clearTimeout(timer); //清除之前设置的定时器
+            if (remaining <= 0) {
+                fun.apply(that, _args);
+                previous = Date.now();
+            } else {
+                timer = setTimeout(fun, remaining); //因为上面添加的clearTimeout.实际这个定时器只有最后一次才会执行
+            }
+        }
+    }
+</script> -->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    $('#upBtn').click(function () {
+        var name = $('#name').val()
+        var state = $('#state').val()
+        var largeArea = $('#largeArea').val()
+        var province = $('#province').val()
+        var prefectureLevelCity = $('#prefectureLevelCity').val()
+        var address = $('#address').val()
+        var tel = $('#tel').val()
+        $.ajax({
+            url: 'http://localhost:7002/addDistributor',
+            type: 'POST',
+            data: {
+                name,
+                state,
+                largeArea,
+                province,
+                prefectureLevelCity,
+                address,
+                tel,
+            },
+            success(data) {
+                console.log(data)
+            }
+        })
+    })
+    $.ajax({
+        url: 'http://localhost:7002/getAllDistributor',
+        type: 'GET',
+        data: {},
+        success(data) {
+            console.log(data)
+        }
+    })
+</script>
