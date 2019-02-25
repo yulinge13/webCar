@@ -1,0 +1,2 @@
+INSERT INTO `car` VALUES (1, '123123');
+INSERT INTO `car` VALUES (2, '123');
