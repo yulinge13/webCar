@@ -37,6 +37,29 @@ class CarLists extends Service {
         const res = await ctx.model.Distributor.create(params);
         return res;
     }
+    //获取省 市 区
+    async getArea(id) {
+        const {
+            ctx
+        } = this
+        const res = await ctx.model.Area.findAll({
+            where: {
+                area_parent_id: id
+            }
+        });
+        return res;
+    }
+    //预约
+    async makeAppointment(params) {
+        const {
+            ctx
+        } = this
+        const res = await ctx.model.Appointment.create({
+            ...params
+        });
+        console.log("res",res);
+        return res;
+    }
 }
 
 module.exports = CarLists

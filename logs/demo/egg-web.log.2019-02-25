@@ -1,0 +1,25 @@
+2019-02-25 20:55:11,722 INFO 13272 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-25 20:55:11,820 INFO 13272 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-25 20:55:11,820 INFO 13272 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-25 20:55:11,820 INFO 13272 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-25 20:55:11,821 INFO 13272 [egg-multipart] file mode enable
+2019-02-25 20:55:11,821 INFO 13272 [egg-multipart] will save temporary files to "C:\\Users\\LINGEL~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-25 20:55:13,472 INFO 13272 [egg-static] starting static serve /public/ -> C:\Users\linge l yu\Desktop\webCar\app\public
+2019-02-25 20:55:13,477 INFO 13272 [egg-security] use noopen middleware
+2019-02-25 20:55:13,484 INFO 13272 [egg-security] use nosniff middleware
+2019-02-25 20:55:13,488 INFO 13272 [egg-security] use xssProtection middleware
+2019-02-25 20:55:13,491 INFO 13272 [egg-security] use xframe middleware
+2019-02-25 20:55:13,494 INFO 13272 [egg-security] use dta middleware
+2019-02-25 20:55:13,494 INFO 13272 [egg-security] compose 5 middlewares into one security middleware
+2019-02-25 20:55:13,524 INFO 13272 [egg:core] dump config after load, 11ms
+2019-02-25 20:55:13,634 INFO 13272 [egg-watcher:application] watcher start success
+2019-02-25 20:55:13,737 INFO 13272 [egg:core] dump config after ready, 15ms
+2019-02-26 10:01:42,537 WARN 13272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-02-26 10:01:43,056 INFO 13272 [egg-logrotator] clean all log before 31 days
+2019-02-26 10:01:43,059 INFO 13272 [-/127.0.0.1/-/506ms SCHEDULE /__schedule?path=C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js&type=worker&cron=0%200%20*%20*%20*] [egg-schedule] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 504ms
+2019-02-26 10:01:43,062 INFO 13272 [-/127.0.0.1/-/1ms SCHEDULE /__schedule?path=C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false&disable=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "C:\\Users\\LINGEL~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo"
+2019-02-26 10:01:44,113 INFO 13272 [-/127.0.0.1/-/1052ms SCHEDULE /__schedule?path=C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false&disable=false] [egg-multipart:CleanTmpdir] end
+2019-02-26 10:01:44,113 INFO 13272 [-/127.0.0.1/-/1052ms SCHEDULE /__schedule?path=C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&immediate=false&disable=false] [egg-schedule] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js execute succeed, used 1052ms
+2019-02-26 10:01:45,198 INFO 13272 [egg-logrotator] broadcast log-reload
+2019-02-26 10:01:45,199 INFO 13272 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\common-error.log -> C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\common-error.log.2019-02-25","C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\demo-web.log -> C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\demo-web.log.2019-02-25","C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-web.log -> C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-web.log.2019-02-25","C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-schedule.log -> C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-schedule.log.2019-02-25","C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-agent.log -> C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-agent.log.2019-02-25"]
+2019-02-26 10:01:45,199 INFO 13272 [-/127.0.0.1/-/2645ms SCHEDULE /__schedule?path=C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js&type=worker&cron=1%200%200%20*%20*%20*] [egg-schedule] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 2645ms
