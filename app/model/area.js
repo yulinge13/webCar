@@ -20,6 +20,5 @@ module.exports = app => {
         init_date:DATE,
         init_addr:STRING(16)
     });
-
     return Area;
 };

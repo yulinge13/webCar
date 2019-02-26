@@ -26,7 +26,14 @@ class CarLists extends Service {
         const {
             ctx
         } = this
-        const res = await ctx.model.Distributor.findAll();
+        const res = await ctx.model.Distributor.findAll({
+            include:[
+                {
+                    model:ctx.model.Area,
+                    attributes: ['area_name']
+                }
+            ],
+        });
         return res;
     }
     //新增经销商
@@ -34,6 +41,10 @@ class CarLists extends Service {
         const {
             ctx
         } = this
+        const {
+            province,
+            prefectureLevelCity
+        } = params
         const res = await ctx.model.Distributor.create(params);
         return res;
     }

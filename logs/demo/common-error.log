@@ -1,10 +1,314 @@
-2019-02-26 16:46:03,770 ERROR 15488 nodejs.unhandledExceptionError: read ECONNRESET
-    at _errnoException (util.js:992:11)
-    at TCP.onread (net.js:618:25)
-code: "ECONNRESET"
-errno: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 15488
-hostname: LYU129PRI2
+2019-02-27 01:42:04,621 ERROR 14936 [-/::1/-/4ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is not associated to Distributor!
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:583:13)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:29:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 14936
+hostname: KOTIN
+
+2019-02-27 01:53:46,132 ERROR 6116 [-/::1/-/1ms GET /getAllDistributor] nodejs.ReferenceError: Area is not defined
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:31:17)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 6116
+hostname: KOTIN
+
+2019-02-27 01:56:57,585 ERROR 20492 [-/::1/-/4ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is not associated to Distributor!
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:583:13)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:29:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 20492
+hostname: KOTIN
+
+2019-02-27 02:16:15,922 ERROR 1816 [-/::1/-/4ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is not associated to Distributor!
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:583:13)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:30:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 1816
+hostname: KOTIN
+
+2019-02-27 02:18:04,260 ERROR 19816 [-/::1/-/4ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is associated to Distributor using an alias. You've included an alias (area), but it does not match the alias defined in your association.
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:588:17)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:30:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 19816
+hostname: KOTIN
+
+2019-02-27 02:18:27,369 ERROR 4220 [-/::1/-/4ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is associated to Distributor using an alias. You've included an alias (area), but it does not match the alias defined in your association.
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:588:17)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:29:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 4220
+hostname: KOTIN
+
+2019-02-27 02:19:57,372 ERROR 20484 [-/::1/-/4ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is associated to Distributor using an alias. You've included an alias (area), but it does not match the alias defined in your association.
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:588:17)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:29:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 20484
+hostname: KOTIN
+
+2019-02-27 02:20:07,663 ERROR 20484 [-/::1/-/2ms GET /getAllDistributor] nodejs.SequelizeEagerLoadingError: dt_area is associated to Distributor using an alias. You've included an alias (area), but it does not match the alias defined in your association.
+    at Function._getIncludedAssociation (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:588:17)
+    at Function._validateIncludedElement (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:499:53)
+    at options.include.options.include.map.include (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:395:37)
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:390:39)
+    at Promise.try.then.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1570:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Function.findAll (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\model.js:1566:8)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\service\car.js:29:49)
+    at CarLists.getAllDistributor (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:91:47)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+name: "SequelizeEagerLoadingError"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 20484
+hostname: KOTIN
 
