@@ -1,0 +1,2 @@
+2019-02-25 20:55:13,648 INFO 13272 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-02-25 20:58:03,321 INFO 13272 [egg-sequelize](2ms) Executed (default): SELECT `id`, `name`, `state`, `largeArea`, `province`, `prefectureLevelCity`, `address`, `tel` FROM `Distributor` AS `Distributor`;

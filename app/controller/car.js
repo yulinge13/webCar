@@ -97,7 +97,7 @@ module.exports = app => {
         }
 
         //新增经销商
-        async addDistributor(){
+        async addDistributor() {
             const {
                 ctx
             } = this
@@ -110,14 +110,61 @@ module.exports = app => {
                 address,
                 tel
             } = ctx.request.body
-            if(name && state && largeArea && province && prefectureLevelCity && address && tel){
+            if (name && state && largeArea && province && prefectureLevelCity && address && tel) {
                 const res = await ctx.service.car.addDistributor(ctx.request.body)
                 if (res) {
                     ctx.success('获取成功', res)
                 } else {
                     ctx.error('获取失败!', res)
                 }
-            }else{
+            } else {
+                ctx.error('获取失败!', res)
+            }
+        }
+
+        //获取省 市 区
+        async getArea() {
+            const {
+                ctx
+            } = this
+            const {
+                id
+            } = ctx.request.query
+            if (id) {
+                const res = await ctx.service.car.getArea(id)
+                if (res) {
+                    ctx.success('获取成功', res)
+                } else {
+                    ctx.error('获取失败!', res)
+                }
+            } else {
+                ctx.error('获取失败!', res)
+            }
+        }
+
+
+
+        //预约
+        async makeAppointment() {
+            const {
+                ctx,
+            } = this
+            const {
+                carType,
+                name,
+                tel,
+                provinceId,
+                cityId,
+                distributorId
+            } = ctx.request.body
+            if (name && carType && provinceId && cityId && distributorId && tel) {
+                const res = await ctx.service.car.makeAppointment(ctx.request.body)
+                if (res) {
+                    ctx.success('获取成功', res)
+                } else {
+                    ctx.error('获取失败!', res)
+                }
+            } else {
                 ctx.error('获取失败!', res)
             }
         }

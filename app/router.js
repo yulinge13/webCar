@@ -58,6 +58,14 @@ const routers = app => {
             ],
             method: 'post'
         },
+        //省市区
+        {
+            url: '/getArea',
+            middlewareLists: [
+                controller.car.getArea,
+            ],
+            method: 'get'
+        },
     ]
     routerConfig.forEach(item => {
         router[item.method](item.url, ...item.middlewareLists)
