@@ -1,7 +1,7 @@
 /*
- Navicat Premium Data Transfer
+ Navicat MySQL Data Transfer
 
- Source Server         : sht
+ Source Server         : ylg
  Source Server Type    : MySQL
  Source Server Version : 50553
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 25/02/2019 20:39:01
+ Date: 27/02/2019 02:25:08
 */
 
 SET NAMES utf8mb4;
@@ -42,19 +42,19 @@ CREATE TABLE `distributor`  (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `state` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `largeArea` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `province` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `prefectureLevelCity` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `province` int(11) NOT NULL,
+  `prefectureLevelCity` int(11) NOT NULL,
   `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `tel` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of distributor
 -- ----------------------------
-INSERT INTO `distributor` VALUES (1, '123', '123', '123', '213', '213', '213', '213');
-INSERT INTO `distributor` VALUES (2, '123', '123', '123', '213', '213', '213', '213');
-INSERT INTO `distributor` VALUES (3, '123', '阿斯顿撒旦', '123', '213', '213', '213', '撒旦撒旦 ');
+INSERT INTO `distributor` VALUES (4, '成都汇腾汽车销售服务有限公司', '03, 正常营业', 'RSD6', 510000, 510100, '成都市蒲江县鹤山镇工业集中发展区工业南路8号', '028-69929666');
+INSERT INTO `distributor` VALUES (5, '成都广汇申蓉汇通汽车销售服务有限公司', '03, 正常营业', 'RSD6', 510000, 510100, '成都市金堂县迎宾大道二段13号 02868277984', '028-69390000');
+INSERT INTO `distributor` VALUES (6, '四川虹润汽车贸易有限公司', '03, 正常营业', 'RSD6', 510000, 510100, '四川省新津县花桥镇龚巷村5组', '028-82590888');
 
 -- ----------------------------
 -- Table structure for dt_area
