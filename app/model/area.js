@@ -11,14 +11,23 @@ module.exports = app => {
             primaryKey: true,
             autoIncrement: true
         },
-        area_name:STRING(16),
-        area_code:STRING(128),
-        area_short:STRING(32),
-        area_is_hot:STRING(1),
-        area_sequence:INTEGER(11),
-        area_parent_id:INTEGER(11),
-        init_date:DATE,
-        init_addr:STRING(16)
+        area_name: STRING(16),
+        area_code: STRING(128),
+        area_short: STRING(32),
+        area_is_hot: STRING(1),
+        area_sequence: INTEGER(11),
+        area_parent_id: INTEGER(11),
+        init_date: DATE,
+        init_addr: STRING(16)
     });
+    // Area.associate = function () {
+    //     app.model.Area.belongsTo(app.model.Distributor, {
+    //         foreignKey: "id",
+    //         targetKey: 'province'
+    //     });
+    // }
+    // Area.sync({
+    //     force: true
+    // });
     return Area;
 };

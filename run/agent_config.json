@@ -73,7 +73,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -85,14 +85,14 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
-        "file": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-schedule.log"
+        "file": "C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo\\egg-schedule.log"
       }
     },
     "multipart": {
@@ -106,7 +106,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo",
+      "tmpdir": "C:\\Users\\LINGEL\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -129,14 +129,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\app\\public",
+      "dir": "C:\\Users\\linge l yu\\Desktop\\webCar\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\app\\view",
+      "root": "C:\\Users\\linge l yu\\Desktop\\webCar\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -222,9 +222,9 @@
         "egg-bin": "^4.9.0"
       }
     },
-    "baseDir": "C:\\Users\\Administrator\\Desktop\\node\\webCar",
-    "HOME": "C:\\Users\\Administrator",
-    "rundir": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\run",
+    "baseDir": "C:\\Users\\linge l yu\\Desktop\\webCar",
+    "HOME": "C:\\Users\\linge l yu",
+    "rundir": "C:\\Users\\linge l yu\\Desktop\\webCar\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -254,7 +254,7 @@
       }
     },
     "logger": {
-      "dir": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo",
+      "dir": "C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -328,8 +328,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-session",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -341,8 +341,8 @@
         "session"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-security",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-security",
       "version": "2.4.0"
     },
     "jsonp": {
@@ -354,8 +354,8 @@
         "security"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-jsonp",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -367,8 +367,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-onerror",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -378,8 +378,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-i18n",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-i18n",
       "version": "2.0.0"
     },
     "watcher": {
@@ -389,8 +389,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-watcher",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -400,8 +400,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-schedule",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-schedule",
       "version": "3.4.0"
     },
     "multipart": {
@@ -413,8 +413,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-multipart",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-multipart",
       "version": "2.2.1"
     },
     "development": {
@@ -428,8 +428,8 @@
       "env": [
         "local"
       ],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-development",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-development",
       "version": "2.4.1"
     },
     "logrotator": {
@@ -441,8 +441,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-logrotator",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-logrotator",
       "version": "3.0.3"
     },
     "static": {
@@ -452,8 +452,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-static",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-static",
       "version": "2.1.1"
     },
     "view": {
@@ -463,8 +463,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-view",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-view",
       "version": "2.1.0"
     },
     "mysql": {
@@ -474,8 +474,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-mysql",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-mysql",
       "version": "3.0.0"
     },
     "cors": {
@@ -485,8 +485,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-cors",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-cors",
       "version": "2.1.1"
     },
     "redis": {
@@ -496,8 +496,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-redis",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-redis",
       "version": "2.0.0"
     },
     "io": {
@@ -509,8 +509,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-socket.io",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-socket.io",
       "version": "4.1.5"
     },
     "sequelize": {
@@ -520,8 +520,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
-      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-sequelize",
+      "from": "C:\\Users\\linge l yu\\Desktop\\webCar\\config\\plugin.js",
+      "path": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg-sequelize",
       "version": "4.3.1"
     }
   }

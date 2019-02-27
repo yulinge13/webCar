@@ -19,8 +19,11 @@ module.exports = app => {
         address: STRING(255),
         tel: STRING(255)
     });
-    Distributor.associate = function() {
-        app.model.Distributor.hasMany(app.model.Area, { foreignKey: 'id',targetKey:'province',foreignKey: 'id',targetKey:'prefectureLevelCity' }); 
-    }
+    // Distributor.associate = function() {
+    //     app.model.Distributor.hasMany(app.model.Area,{foreignKey:'id',targetKey: 'province' }); 
+    // }
+    // Distributor.sync({
+    //     force: true
+    // });
     return Distributor;
 };

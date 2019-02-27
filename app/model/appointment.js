@@ -11,7 +11,7 @@ module.exports = app => {
             primaryKey: true,
             autoIncrement: true
         },
-        carType:INTEGER(11),
+        carType:STRING(255),
         name:STRING(255),
         tel:STRING(11),
         provinceId:INTEGER(11),

@@ -96,6 +96,27 @@ module.exports = app => {
             }
         }
 
+        //根据省市区查询经销商
+        async getAllDistributorByArea() {
+            const {
+                ctx
+            } = this
+            const {
+                provinceId,
+                cityId
+            } = ctx.request.query
+            if(provinceId && cityId){
+                const res = await ctx.service.car.getAllDistributorByArea(ctx.request.query)
+                if (res) {
+                    ctx.success('获取成功', res)
+                } else {
+                    ctx.error('获取失败!', res)
+                }
+            }else{
+                ctx.error('请选择省市', null)
+            }
+        }
+
         //新增经销商
         async addDistributor() {
             const {

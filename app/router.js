@@ -58,6 +58,13 @@ const routers = app => {
             ],
             method: 'post'
         },
+        {
+            url: '/getAllDistributorByArea',
+            middlewareLists: [
+                controller.car.getAllDistributorByArea,
+            ],
+            method: 'get'
+        },
         //省市区
         {
             url: '/getArea',

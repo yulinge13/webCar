@@ -82,6 +82,19 @@
       "GET"
     ],
     "paramNames": [],
+    "path": "/getAllDistributorByArea",
+    "regexp": "/^\\/getAllDistributorByArea(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
     "path": "/getArea",
     "regexp": "/^\\/getArea(?:\\/(?=$))?$/",
     "stack": [
