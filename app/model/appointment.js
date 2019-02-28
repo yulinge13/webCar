@@ -18,6 +18,8 @@ module.exports = app => {
         cityId:INTEGER(11),
         distributorId:INTEGER(11)
     });
-
+    Appointment.sync({
+        force:false
+    })
     return Appointment;
 };

@@ -29,5 +29,8 @@ module.exports = app => {
     // Area.sync({
     //     force: true
     // });
+    Area.sync({
+        force:false
+    })
     return Area;
 };

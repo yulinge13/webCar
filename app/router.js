@@ -65,11 +65,34 @@ const routers = app => {
             ],
             method: 'get'
         },
+        {
+            url: '/deleteDistributor',
+            middlewareLists: [
+                controller.car.deleteDistributor,
+            ],
+            method: 'post'
+        },
         //省市区
         {
             url: '/getArea',
             middlewareLists: [
                 controller.car.getArea,
+            ],
+            method: 'get'
+        },
+        //预约
+        {
+            url: '/makeAppointment',
+            middlewareLists: [
+                controller.car.makeAppointment,
+            ],
+            method: 'post'
+        },
+        //获取预约
+        {
+            url: '/getAllAppointment',
+            middlewareLists: [
+                controller.car.getAllAppointment,
             ],
             method: 'get'
         },

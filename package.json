@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "egg-bin dev"
+    "dev": "egg-bin dev",
+    "start": "egg-scripts start --port=7001 --daemon --ignore-stderr",
+    "stop": "egg-scripts stop"
   },
   "author": "",
   "license": "ISC",

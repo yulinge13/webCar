@@ -5,7 +5,7 @@ module.exports = app => {
         DATE
     } = app.Sequelize;
 
-    const Distributor = app.model.define('Distributor', {
+    const Distributor = app.model.define('distributor', {
         id: {
             type: INTEGER,
             primaryKey: true,
@@ -25,5 +25,8 @@ module.exports = app => {
     // Distributor.sync({
     //     force: true
     // });
+    Distributor.sync({
+        force: false
+    })
     return Distributor;
 };

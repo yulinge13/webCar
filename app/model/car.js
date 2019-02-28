@@ -5,7 +5,7 @@ module.exports = app => {
         DATE
     } = app.Sequelize;
 
-    const Car = app.model.define('Car', {
+    const Car = app.model.define('car', {
         id: {
             type: INTEGER,
             primaryKey: true,
@@ -13,6 +13,8 @@ module.exports = app => {
         },
         name: STRING(255),
     });
-
+    Car.sync({
+        force: false
+    })
     return Car;
 };
