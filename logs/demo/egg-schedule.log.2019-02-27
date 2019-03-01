@@ -1,0 +1,22 @@
+2019-02-27 02:16:10,964 INFO 20368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-02-27 04:30:00.000
+2019-02-27 02:16:10,964 INFO 20368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-02-28 00:00:00.000
+2019-02-27 02:16:10,965 INFO 20368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-02-28 00:00:01.000
+2019-02-27 11:14:28,254 INFO 25276 [Timer] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-02-28 04:30:00.000
+2019-02-27 11:14:28,255 INFO 25276 [Timer] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-02-28 00:00:00.000
+2019-02-27 11:14:28,255 INFO 25276 [Timer] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-02-28 00:00:01.000
+2019-02-27 11:18:14,625 INFO 22192 [Timer] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-02-28 04:30:00.000
+2019-02-27 11:18:14,625 INFO 22192 [Timer] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-02-28 00:00:00.000
+2019-02-27 11:18:14,626 INFO 22192 [Timer] C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-02-28 00:00:01.000
+2019-02-27 20:21:28,944 INFO 3368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-02-28 04:30:00.000
+2019-02-27 20:21:28,944 INFO 3368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-02-28 00:00:00.000
+2019-02-27 20:21:28,944 INFO 3368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-02-28 00:00:01.000
+2019-02-28 00:00:00,003 INFO 15656 [155128320000114063960539472] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js task received by app
+2019-02-28 00:00:00,004 INFO 15656 [155128320000114063960539472] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2019-02-28 00:00:00,008 INFO 15656 [155128320000114063960539472] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 4ms
+2019-02-28 00:00:00,001 INFO 3368 [155128320000114063960539472] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js triggered, send random by agent
+2019-02-28 00:00:00,004 INFO 3368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-03-01 00:00:00.000
+2019-02-28 00:00:01,002 INFO 15656 [155128320100114064960549738] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js task received by app
+2019-02-28 00:00:01,002 INFO 15656 [155128320100114064960549738] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2019-02-28 00:00:01,010 INFO 15656 [155128320100114064960549738] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 8ms
+2019-02-28 00:00:01,001 INFO 3368 [155128320100114064960549738] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js triggered, send random by agent
+2019-02-28 00:00:01,002 INFO 3368 [Timer] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-03-01 00:00:01.000

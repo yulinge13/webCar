@@ -91,12 +91,49 @@
   {
     "name": null,
     "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/deleteDistributor",
+    "regexp": "/^\\/deleteDistributor(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "HEAD",
       "GET"
     ],
     "paramNames": [],
     "path": "/getArea",
     "regexp": "/^\\/getArea(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/makeAppointment",
+    "regexp": "/^\\/makeAppointment(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/getAllAppointment",
+    "regexp": "/^\\/getAllAppointment(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

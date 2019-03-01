@@ -1343,35 +1343,184 @@
 2019-02-27 19:16:40,110 INFO 8756 [egg:core] dump config after load, 10ms
 2019-02-27 19:16:40,207 INFO 8756 [egg-watcher:application] watcher start success
 2019-02-27 19:16:40,315 INFO 8756 [egg:core] dump config after ready, 13ms
-2019-03-01 11:01:03,510 INFO 20836 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-03-01 11:01:03,613 INFO 20836 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2019-03-01 11:01:03,613 INFO 20836 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
-2019-03-01 11:01:03,613 INFO 20836 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2019-03-01 11:01:03,613 INFO 20836 [egg-multipart] file mode enable
-2019-03-01 11:01:03,613 INFO 20836 [egg-multipart] will save temporary files to "C:\\Users\\LINGEL~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
-2019-03-01 11:01:05,649 INFO 20836 [egg-static] starting static serve /public/ -> C:\Users\linge l yu\Desktop\webCar\app\public
-2019-03-01 11:01:05,657 INFO 20836 [egg-security] use noopen middleware
-2019-03-01 11:01:05,665 INFO 20836 [egg-security] use nosniff middleware
-2019-03-01 11:01:05,669 INFO 20836 [egg-security] use xssProtection middleware
-2019-03-01 11:01:05,673 INFO 20836 [egg-security] use xframe middleware
-2019-03-01 11:01:05,678 INFO 20836 [egg-security] use dta middleware
-2019-03-01 11:01:05,678 INFO 20836 [egg-security] compose 5 middlewares into one security middleware
-2019-03-01 11:01:05,707 INFO 20836 [egg:core] dump config after load, 12ms
-2019-03-01 11:01:05,802 INFO 20836 [egg-watcher:application] watcher start success
-2019-03-01 11:01:05,919 INFO 20836 [egg:core] dump config after ready, 12ms
-2019-03-01 11:05:50,663 INFO 10524 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
-2019-03-01 11:05:50,780 INFO 10524 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
-2019-03-01 11:05:50,780 INFO 10524 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
-2019-03-01 11:05:50,781 INFO 10524 [egg-schedule]: register schedule C:\Users\linge l yu\Desktop\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
-2019-03-01 11:05:50,781 INFO 10524 [egg-multipart] file mode enable
-2019-03-01 11:05:50,781 INFO 10524 [egg-multipart] will save temporary files to "C:\\Users\\LINGEL~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
-2019-03-01 11:05:52,779 INFO 10524 [egg-static] starting static serve /public/ -> C:\Users\linge l yu\Desktop\webCar\app\public
-2019-03-01 11:05:52,786 INFO 10524 [egg-security] use noopen middleware
-2019-03-01 11:05:52,796 INFO 10524 [egg-security] use nosniff middleware
-2019-03-01 11:05:52,801 INFO 10524 [egg-security] use xssProtection middleware
-2019-03-01 11:05:52,808 INFO 10524 [egg-security] use xframe middleware
-2019-03-01 11:05:52,813 INFO 10524 [egg-security] use dta middleware
-2019-03-01 11:05:52,813 INFO 10524 [egg-security] compose 5 middlewares into one security middleware
-2019-03-01 11:05:52,844 INFO 10524 [egg:core] dump config after load, 10ms
-2019-03-01 11:05:52,954 INFO 10524 [egg-watcher:application] watcher start success
-2019-03-01 11:05:53,120 INFO 10524 [egg:core] dump config after ready, 14ms
+2019-02-27 20:21:28,529 INFO 6996 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:21:28,558 INFO 6996 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:21:28,558 INFO 6996 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:21:28,558 INFO 6996 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:21:28,559 INFO 6996 [egg-multipart] file mode enable
+2019-02-27 20:21:28,559 INFO 6996 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:21:28,865 INFO 6996 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:21:28,868 INFO 6996 [egg-security] use noopen middleware
+2019-02-27 20:21:28,869 INFO 6996 [egg-security] use nosniff middleware
+2019-02-27 20:21:28,869 INFO 6996 [egg-security] use xssProtection middleware
+2019-02-27 20:21:28,870 INFO 6996 [egg-security] use xframe middleware
+2019-02-27 20:21:28,871 INFO 6996 [egg-security] use dta middleware
+2019-02-27 20:21:28,871 INFO 6996 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:21:28,879 INFO 6996 [egg:core] dump config after load, 4ms
+2019-02-27 20:21:28,905 INFO 6996 [egg-watcher:application] watcher start success
+2019-02-27 20:21:28,937 INFO 6996 [egg:core] dump config after ready, 4ms
+2019-02-27 20:24:47,634 INFO 15428 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:24:47,664 INFO 15428 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:24:47,664 INFO 15428 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:24:47,664 INFO 15428 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:24:47,664 INFO 15428 [egg-multipart] file mode enable
+2019-02-27 20:24:47,664 INFO 15428 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:24:47,894 INFO 15428 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:24:47,896 INFO 15428 [egg-security] use noopen middleware
+2019-02-27 20:24:47,896 INFO 15428 [egg-security] use nosniff middleware
+2019-02-27 20:24:47,897 INFO 15428 [egg-security] use xssProtection middleware
+2019-02-27 20:24:47,897 INFO 15428 [egg-security] use xframe middleware
+2019-02-27 20:24:47,897 INFO 15428 [egg-security] use dta middleware
+2019-02-27 20:24:47,897 INFO 15428 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:24:47,905 INFO 15428 [egg:core] dump config after load, 3ms
+2019-02-27 20:24:47,926 INFO 15428 [egg-watcher:application] watcher start success
+2019-02-27 20:24:47,950 INFO 15428 [egg:core] dump config after ready, 5ms
+2019-02-27 20:25:52,093 INFO 15552 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:25:52,123 INFO 15552 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:25:52,123 INFO 15552 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:25:52,123 INFO 15552 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:25:52,123 INFO 15552 [egg-multipart] file mode enable
+2019-02-27 20:25:52,123 INFO 15552 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:25:52,354 INFO 15552 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:25:52,355 INFO 15552 [egg-security] use noopen middleware
+2019-02-27 20:25:52,356 INFO 15552 [egg-security] use nosniff middleware
+2019-02-27 20:25:52,356 INFO 15552 [egg-security] use xssProtection middleware
+2019-02-27 20:25:52,357 INFO 15552 [egg-security] use xframe middleware
+2019-02-27 20:25:52,357 INFO 15552 [egg-security] use dta middleware
+2019-02-27 20:25:52,357 INFO 15552 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:25:52,365 INFO 15552 [egg:core] dump config after load, 4ms
+2019-02-27 20:25:52,386 INFO 15552 [egg-watcher:application] watcher start success
+2019-02-27 20:25:52,416 INFO 15552 [egg:core] dump config after ready, 6ms
+2019-02-27 20:36:26,240 INFO 14852 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:36:26,271 INFO 14852 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:36:26,271 INFO 14852 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:36:26,271 INFO 14852 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:36:26,271 INFO 14852 [egg-multipart] file mode enable
+2019-02-27 20:36:26,271 INFO 14852 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:36:26,511 INFO 14852 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:36:26,513 INFO 14852 [egg-security] use noopen middleware
+2019-02-27 20:36:26,513 INFO 14852 [egg-security] use nosniff middleware
+2019-02-27 20:36:26,513 INFO 14852 [egg-security] use xssProtection middleware
+2019-02-27 20:36:26,513 INFO 14852 [egg-security] use xframe middleware
+2019-02-27 20:36:26,513 INFO 14852 [egg-security] use dta middleware
+2019-02-27 20:36:26,513 INFO 14852 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:36:26,521 INFO 14852 [egg:core] dump config after load, 4ms
+2019-02-27 20:36:26,543 INFO 14852 [egg-watcher:application] watcher start success
+2019-02-27 20:36:26,570 INFO 14852 [egg:core] dump config after ready, 5ms
+2019-02-27 20:42:17,750 INFO 7060 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:42:17,781 INFO 7060 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:42:17,781 INFO 7060 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:42:17,781 INFO 7060 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:42:17,782 INFO 7060 [egg-multipart] file mode enable
+2019-02-27 20:42:17,782 INFO 7060 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:42:18,025 INFO 7060 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:42:18,027 INFO 7060 [egg-security] use noopen middleware
+2019-02-27 20:42:18,028 INFO 7060 [egg-security] use nosniff middleware
+2019-02-27 20:42:18,028 INFO 7060 [egg-security] use xssProtection middleware
+2019-02-27 20:42:18,029 INFO 7060 [egg-security] use xframe middleware
+2019-02-27 20:42:18,029 INFO 7060 [egg-security] use dta middleware
+2019-02-27 20:42:18,029 INFO 7060 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:42:18,037 INFO 7060 [egg:core] dump config after load, 4ms
+2019-02-27 20:42:18,062 INFO 7060 [egg-watcher:application] watcher start success
+2019-02-27 20:42:18,089 INFO 7060 [egg:core] dump config after ready, 4ms
+2019-02-27 20:43:44,111 INFO 15268 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:43:44,142 INFO 15268 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:43:44,142 INFO 15268 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:43:44,142 INFO 15268 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:43:44,142 INFO 15268 [egg-multipart] file mode enable
+2019-02-27 20:43:44,142 INFO 15268 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:43:44,386 INFO 15268 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:43:44,389 INFO 15268 [egg-security] use noopen middleware
+2019-02-27 20:43:44,389 INFO 15268 [egg-security] use nosniff middleware
+2019-02-27 20:43:44,390 INFO 15268 [egg-security] use xssProtection middleware
+2019-02-27 20:43:44,390 INFO 15268 [egg-security] use xframe middleware
+2019-02-27 20:43:44,390 INFO 15268 [egg-security] use dta middleware
+2019-02-27 20:43:44,390 INFO 15268 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:43:44,400 INFO 15268 [egg:core] dump config after load, 4ms
+2019-02-27 20:43:44,431 INFO 15268 [egg-watcher:application] watcher start success
+2019-02-27 20:43:44,459 INFO 15268 [egg:core] dump config after ready, 5ms
+2019-02-27 20:46:39,198 INFO 11068 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:46:39,227 INFO 11068 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:46:39,227 INFO 11068 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:46:39,227 INFO 11068 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:46:39,228 INFO 11068 [egg-multipart] file mode enable
+2019-02-27 20:46:39,228 INFO 11068 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:46:39,455 INFO 11068 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:46:39,457 INFO 11068 [egg-security] use noopen middleware
+2019-02-27 20:46:39,457 INFO 11068 [egg-security] use nosniff middleware
+2019-02-27 20:46:39,458 INFO 11068 [egg-security] use xssProtection middleware
+2019-02-27 20:46:39,458 INFO 11068 [egg-security] use xframe middleware
+2019-02-27 20:46:39,458 INFO 11068 [egg-security] use dta middleware
+2019-02-27 20:46:39,458 INFO 11068 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:46:39,466 INFO 11068 [egg:core] dump config after load, 4ms
+2019-02-27 20:46:39,489 INFO 11068 [egg-watcher:application] watcher start success
+2019-02-27 20:46:39,518 INFO 11068 [egg:core] dump config after ready, 6ms
+2019-02-27 20:47:10,573 INFO 6112 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:47:10,602 INFO 6112 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:47:10,602 INFO 6112 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:47:10,602 INFO 6112 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:47:10,603 INFO 6112 [egg-multipart] file mode enable
+2019-02-27 20:47:10,603 INFO 6112 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:47:10,839 INFO 6112 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:47:10,841 INFO 6112 [egg-security] use noopen middleware
+2019-02-27 20:47:10,841 INFO 6112 [egg-security] use nosniff middleware
+2019-02-27 20:47:10,842 INFO 6112 [egg-security] use xssProtection middleware
+2019-02-27 20:47:10,842 INFO 6112 [egg-security] use xframe middleware
+2019-02-27 20:47:10,842 INFO 6112 [egg-security] use dta middleware
+2019-02-27 20:47:10,842 INFO 6112 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:47:10,850 INFO 6112 [egg:core] dump config after load, 4ms
+2019-02-27 20:47:10,872 INFO 6112 [egg-watcher:application] watcher start success
+2019-02-27 20:47:10,899 INFO 6112 [egg:core] dump config after ready, 5ms
+2019-02-27 20:52:57,980 INFO 1212 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:52:58,008 INFO 1212 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:52:58,008 INFO 1212 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:52:58,008 INFO 1212 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:52:58,009 INFO 1212 [egg-multipart] file mode enable
+2019-02-27 20:52:58,009 INFO 1212 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:52:58,252 INFO 1212 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:52:58,253 INFO 1212 [egg-security] use noopen middleware
+2019-02-27 20:52:58,254 INFO 1212 [egg-security] use nosniff middleware
+2019-02-27 20:52:58,254 INFO 1212 [egg-security] use xssProtection middleware
+2019-02-27 20:52:58,255 INFO 1212 [egg-security] use xframe middleware
+2019-02-27 20:52:58,255 INFO 1212 [egg-security] use dta middleware
+2019-02-27 20:52:58,255 INFO 1212 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:52:58,263 INFO 1212 [egg:core] dump config after load, 4ms
+2019-02-27 20:52:58,288 INFO 1212 [egg-watcher:application] watcher start success
+2019-02-27 20:52:58,317 INFO 1212 [egg:core] dump config after ready, 5ms
+2019-02-27 20:56:46,882 INFO 6920 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:56:46,912 INFO 6920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:56:46,912 INFO 6920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:56:46,912 INFO 6920 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:56:46,913 INFO 6920 [egg-multipart] file mode enable
+2019-02-27 20:56:46,913 INFO 6920 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:56:47,146 INFO 6920 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:56:47,148 INFO 6920 [egg-security] use noopen middleware
+2019-02-27 20:56:47,149 INFO 6920 [egg-security] use nosniff middleware
+2019-02-27 20:56:47,149 INFO 6920 [egg-security] use xssProtection middleware
+2019-02-27 20:56:47,149 INFO 6920 [egg-security] use xframe middleware
+2019-02-27 20:56:47,150 INFO 6920 [egg-security] use dta middleware
+2019-02-27 20:56:47,150 INFO 6920 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:56:47,156 INFO 6920 [egg:core] dump config after load, 3ms
+2019-02-27 20:56:47,178 INFO 6920 [egg-watcher:application] watcher start success
+2019-02-27 20:56:47,217 INFO 6920 [egg:core] dump config after ready, 14ms
+2019-02-27 20:57:08,800 INFO 15656 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-02-27 20:57:08,832 INFO 15656 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-02-27 20:57:08,832 INFO 15656 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-02-27 20:57:08,832 INFO 15656 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-02-27 20:57:08,832 INFO 15656 [egg-multipart] file mode enable
+2019-02-27 20:57:08,833 INFO 15656 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-02-27 20:57:09,096 INFO 15656 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-02-27 20:57:09,098 INFO 15656 [egg-security] use noopen middleware
+2019-02-27 20:57:09,099 INFO 15656 [egg-security] use nosniff middleware
+2019-02-27 20:57:09,099 INFO 15656 [egg-security] use xssProtection middleware
+2019-02-27 20:57:09,100 INFO 15656 [egg-security] use xframe middleware
+2019-02-27 20:57:09,100 INFO 15656 [egg-security] use dta middleware
+2019-02-27 20:57:09,100 INFO 15656 [egg-security] compose 5 middlewares into one security middleware
+2019-02-27 20:57:09,108 INFO 15656 [egg:core] dump config after load, 4ms
+2019-02-27 20:57:09,130 INFO 15656 [egg-watcher:application] watcher start success
+2019-02-27 20:57:09,159 INFO 15656 [egg:core] dump config after ready, 4ms
+2019-02-28 00:00:00,008 INFO 15656 [egg-logrotator] clean all log before 31 days
+2019-02-28 00:00:00,008 INFO 15656 [-/127.0.0.1/-/4ms SCHEDULE /__schedule?path=C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js&type=worker&cron=0%200%20*%20*%20*] [egg-schedule] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 4ms
+2019-02-28 00:00:01,009 INFO 15656 [egg-logrotator] broadcast log-reload
+2019-02-28 00:00:01,010 INFO 15656 [egg-logrotator] rotate files success by DayRotator, files ["C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\common-error.log -> C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\common-error.log.2019-02-27","C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\demo-web.log -> C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\demo-web.log.2019-02-27","C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-web.log -> C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-web.log.2019-02-27","C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-schedule.log -> C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-schedule.log.2019-02-27","C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-agent.log -> C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo\\egg-agent.log.2019-02-27"]
+2019-02-28 00:00:01,010 INFO 15656 [-/127.0.0.1/-/8ms SCHEDULE /__schedule?path=C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js&type=worker&cron=1%200%200%20*%20*%20*] [egg-schedule] C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 8ms

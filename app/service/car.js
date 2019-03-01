@@ -39,7 +39,7 @@ class CarLists extends Service {
         return res;
     }
     //根据省市区查询经销商
-    async getAllDistributorByArea(params){
+    async getAllDistributorByArea(params) {
         const {
             ctx
         } = this
@@ -73,6 +73,17 @@ class CarLists extends Service {
         const res = await ctx.model.Distributor.create(params);
         return res;
     }
+    //删除经销商
+    async deleteDistributor(id) {
+        const {ctx} = this;
+        const res = await ctx.model.Distributor.findById(id);
+        if(res){
+            await res.destroy();
+            return true
+        }else{
+            return false
+        }
+    }
     //获取省 市 区
     async getArea(id) {
         const {
@@ -93,7 +104,28 @@ class CarLists extends Service {
         const res = await ctx.model.Appointment.create({
             ...params
         });
-        console.log("res", res);
+        return res;
+    }
+    //获取所有的预约
+    async getAllAppointment() {
+        const {
+            ctx,
+        } = this
+        let sql = `SELECT 
+            a.*,
+            d.area_name as provinceName,
+            c.area_name as cityName,
+            dis.name as distributorName
+        FROM 
+            appointment a LEFT JOIN dt_area d 
+        ON 
+            a.provinceId = d.id LEFT JOIN dt_area c 
+        ON 
+            a.cityId = c.id LEFT JOIN distributor dis 
+        ON  a.distributorId = dis.id`
+        const res = await ctx.model.query(sql, {
+            type: this.app.Sequelize.QueryTypes.SELECT
+        })
         return res;
     }
 }

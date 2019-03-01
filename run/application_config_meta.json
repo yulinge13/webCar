@@ -205,7 +205,9 @@
     "main": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js",
     "scripts": {
       "test": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "dev": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "dev": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "start": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "stop": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js"
     },
     "author": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js",
     "license": "C:\\Users\\linge l yu\\Desktop\\webCar\\node_modules\\egg\\config\\config.default.js",

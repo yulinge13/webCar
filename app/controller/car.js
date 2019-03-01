@@ -142,7 +142,25 @@ module.exports = app => {
                 ctx.error('获取失败!', res)
             }
         }
-
+        //删除经销商
+        async deleteDistributor(){
+            const {
+                ctx
+            } = this
+            const {
+                id
+            } = ctx.request.body
+            if (id) {
+                const res = await ctx.service.car.deleteDistributor(id)
+                if (res) {
+                    ctx.success('删除成功', res)
+                } else {
+                    ctx.error('删除失败!', res)
+                }
+            } else {
+                ctx.error('删除失败!', res)
+            }
+        }
         //获取省 市 区
         async getArea() {
             const {
@@ -179,14 +197,39 @@ module.exports = app => {
                 distributorId
             } = ctx.request.body
             if (name && carType && provinceId && cityId && distributorId && tel) {
-                const res = await ctx.service.car.makeAppointment(ctx.request.body)
-                if (res) {
-                    ctx.success('获取成功', res)
-                } else {
-                    ctx.error('获取失败!', res)
+                if(/^1[34578]\d{9}$/.test(tel)){
+                    const data = await ctx.model.Appointment.findAll({
+                        where:{
+                            tel
+                        }
+                    });
+                    if(data.length>0){
+                        ctx.error('已经预约过了', null)
+                    }else{
+                        const res = await ctx.service.car.makeAppointment(ctx.request.body)
+                        if (res) {
+                            ctx.success('获取成功', res)
+                        } else {
+                            ctx.error('预约失败!', res)
+                        }
+                    }
+                }else{
+                    ctx.error('请输入正确的手机号!', res)
                 }
             } else {
-                ctx.error('获取失败!', res)
+                ctx.error('预约失败!', res)
+            }
+        }
+        //获取所有的预约
+        async getAllAppointment(){
+            const {
+                ctx,
+            } = this
+            const res = await ctx.service.car.getAllAppointment()
+            if (res) {
+                ctx.success('获取成功', res)
+            } else {
+                ctx.error('预约失败!', res)
             }
         }
     }
