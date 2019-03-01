@@ -490,3 +490,4 @@
 2019-02-27 19:15:49,663 INFO 15896 [egg-sequelize](5ms) Executed (default): SELECT `id`, `area_name`, `area_code`, `area_short`, `area_is_hot`, `area_sequence`, `area_parent_id`, `init_date`, `init_addr` FROM `dt_area` AS `dt_area` WHERE `dt_area`.`area_parent_id` = '0';
 2019-02-27 19:15:49,674 INFO 15896 [egg-sequelize](15ms) Executed (default): SELECT `id`, `area_name`, `area_code`, `area_short`, `area_is_hot`, `area_sequence`, `area_parent_id`, `init_date`, `init_addr` FROM `dt_area` AS `dt_area` WHERE `dt_area`.`area_parent_id` = '0';
 2019-02-27 19:16:40,217 INFO 8756 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-01 11:01:05,814 INFO 20836 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result

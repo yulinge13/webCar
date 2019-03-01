@@ -673,3 +673,14 @@
 2019-02-27 19:16:30,741 INFO 22192 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"C:\\Users\\linge l yu\\Desktop\\webCar\\app\\model\\appointment.js","stat":{"dev":3068841360,"mode":33206,"nlink":1,"uid":0,"gid":0,"rdev":0,"ino":6192449488663956,"size":514,"atimeMs":1551266190736.9814,"mtimeMs":1551266190731.4668,"ctimeMs":1551266190731.4668,"birthtimeMs":1551170757917.493,"atime":"2019-02-27T11:16:30.737Z","mtime":"2019-02-27T11:16:30.731Z","ctime":"2019-02-27T11:16:30.731Z","birthtime":"2019-02-26T08:45:57.917Z"},"remove":false,"isDirectory":false,"isFile":true}
 2019-02-27 19:16:30,942 WARN 22192 [agent:development] reload worker because C:\Users\linge l yu\Desktop\webCar\app\model\appointment.js change
 2019-02-27 19:16:40,325 WARN 22192 [ClusterClient:Connection] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-03-01 11:00:52,622 INFO 21448 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\linge l yu\\Desktop\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-03-01 11:00:55,152 INFO 21448 [egg:core] dump config after load, 10ms
+2019-03-01 11:00:55,338 INFO 21448 [egg-watcher] Start watching: ["C:\\Users\\linge l yu\\Desktop\\webCar\\app","C:\\Users\\linge l yu\\Desktop\\webCar\\config","C:\\Users\\linge l yu\\Desktop\\webCar\\mocks","C:\\Users\\linge l yu\\Desktop\\webCar\\mocks_proxy","C:\\Users\\linge l yu\\Desktop\\webCar\\app.js"]
+2019-03-01 11:00:55,338 INFO 21448 [egg-watcher] Start watching: "C:\\Users\\linge l yu\\Desktop\\webCar\\app"
+2019-03-01 11:00:55,339 INFO 21448 [egg-watcher] Start watching: "C:\\Users\\linge l yu\\Desktop\\webCar\\config"
+2019-03-01 11:00:55,340 INFO 21448 [egg-watcher] Start watching: "C:\\Users\\linge l yu\\Desktop\\webCar\\mocks"
+2019-03-01 11:00:55,340 INFO 21448 [egg-watcher] Start watching: "C:\\Users\\linge l yu\\Desktop\\webCar\\mocks_proxy"
+2019-03-01 11:00:55,340 INFO 21448 [egg-watcher] Start watching: "C:\\Users\\linge l yu\\Desktop\\webCar\\app.js"
+2019-03-01 11:00:55,341 INFO 21448 [egg-watcher:agent] watcher start success
+2019-03-01 11:00:55,947 INFO 21448 [egg:core] dump config after ready, 15ms
+2019-03-01 11:00:55,450 INFO 21448 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
