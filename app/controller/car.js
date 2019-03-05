@@ -105,7 +105,7 @@ module.exports = app => {
                 provinceId,
                 cityId
             } = ctx.request.query
-            if(provinceId && cityId){
+            if(provinceId){
                 const res = await ctx.service.car.getAllDistributorByArea(ctx.request.query)
                 if (res) {
                     ctx.success('获取成功', res)
@@ -196,7 +196,7 @@ module.exports = app => {
                 cityId,
                 distributorId
             } = ctx.request.body
-            if (name && carType && provinceId && cityId && distributorId && tel) {
+            if (name && carType  && tel) {
                 if(/^1[34578]\d{9}$/.test(tel)){
                     const data = await ctx.model.Appointment.findAll({
                         where:{
@@ -217,7 +217,7 @@ module.exports = app => {
                     ctx.error('请输入正确的手机号!', res)
                 }
             } else {
-                ctx.error('预约失败!', res)
+                ctx.error('请填写完整信息!', res)
             }
         }
         //获取所有的预约

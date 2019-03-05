@@ -55,7 +55,10 @@ class CarLists extends Service {
         ON 
             d.province = a.id LEFT JOIN dt_area c 
         ON 
-            d.prefectureLevelCity = c.id where d.province = ${provinceId} and d.prefectureLevelCity = ${cityId}`
+            d.prefectureLevelCity = c.id where d.province = ${provinceId}`
+        if(cityId){
+            sql +=` and d.prefectureLevelCity = ${cityId}` 
+        }    
         const res = await ctx.model.query(sql, {
             type: this.app.Sequelize.QueryTypes.SELECT
         })
@@ -98,11 +101,13 @@ class CarLists extends Service {
     }
     //预约
     async makeAppointment(params) {
+        console.log(new Date().getTime());
         const {
             ctx
         } = this
         const res = await ctx.model.Appointment.create({
-            ...params
+            ...params,
+            creatTime:new Date().getTime()
         });
         return res;
     }
@@ -113,16 +118,17 @@ class CarLists extends Service {
         } = this
         let sql = `SELECT 
             a.*,
-            d.area_name as provinceName,
+            dis.name as distributorName,
             c.area_name as cityName,
-            dis.name as distributorName
+            d.area_name as provinceName
         FROM 
-            appointment a LEFT JOIN dt_area d 
+            appointment a LEFT JOIN distributor dis 
+        ON  
+            a.distributorId = dis.id LEFT JOIN dt_area d
         ON 
-            a.provinceId = d.id LEFT JOIN dt_area c 
+            dis.province = d.id LEFT JOIN dt_area c 
         ON 
-            a.cityId = c.id LEFT JOIN distributor dis 
-        ON  a.distributorId = dis.id`
+            dis.prefectureLevelCity = c.id ORDER BY a.creatTime DESC`
         const res = await ctx.model.query(sql, {
             type: this.app.Sequelize.QueryTypes.SELECT
         })

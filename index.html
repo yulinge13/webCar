@@ -109,4 +109,16 @@
             console.log(data)
         }
     })
+    $.ajax({
+            url: 'http://localhost:7001/makeAppointment',
+            type: 'POST',
+            data: {
+                name:1111,
+                tel:15983750900,
+                carType:11111
+            },
+            success(data) {
+                console.log(data)
+            }
+        })
 </script>
