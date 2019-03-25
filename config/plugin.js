@@ -21,3 +21,8 @@ exports.sequelize = {
     enable: true,
     package: 'egg-sequelize',
 };
+
+exports.http = {
+    enable: true,
+    package: 'egg-axios'
+}

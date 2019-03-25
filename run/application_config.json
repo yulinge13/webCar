@@ -106,6 +106,7 @@
         "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\locales",
         "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-socket.io\\config\\locales",
         "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-sequelize\\config\\locales",
+        "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-axios\\config\\locales",
         "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\locales",
         "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\locales"
       ],
@@ -223,6 +224,14 @@
       },
       "timezone": "+08:00"
     },
+    "http": {
+      "headers": {
+        "common": {
+          "Content-Type": "application/json; charset=UTF-8"
+        }
+      },
+      "timeout": 10000
+    },
     "env": "local",
     "name": "demo",
     "keys": "<String len: 7>",
@@ -245,6 +254,7 @@
       "license": "ISC",
       "dependencies": {
         "egg": "^2.11.2",
+        "egg-axios": "^1.1.2",
         "egg-cors": "^2.1.1",
         "egg-mysql": "^3.0.0",
         "egg-redis": "^2.0.0",
@@ -254,6 +264,7 @@
         "mysql2": "^1.6.5",
         "node-uuid": "^1.4.8",
         "node-xlsx": "^0.12.1",
+        "soap": "^0.26.0",
         "xlsx": "^0.14.0"
       },
       "devDependencies": {
@@ -581,6 +592,17 @@
       "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
       "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-sequelize",
       "version": "4.3.1"
+    },
+    "http": {
+      "enable": true,
+      "package": "egg-axios",
+      "name": "http",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\plugin.js",
+      "path": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg-axios",
+      "version": "1.1.2"
     }
   }
 }

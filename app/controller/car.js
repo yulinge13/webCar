@@ -1,3 +1,5 @@
+var soap = require('soap');
+const UUID = require('node-uuid')
 module.exports = app => {
     return class CarLists extends app.Controller {
         //注册
@@ -105,14 +107,14 @@ module.exports = app => {
                 provinceId,
                 cityId
             } = ctx.request.query
-            if(provinceId && cityId){
+            if (provinceId && cityId) {
                 const res = await ctx.service.car.getAllDistributorByArea(ctx.request.query)
                 if (res) {
                     ctx.success('获取成功', res)
                 } else {
                     ctx.error('获取失败!', res)
                 }
-            }else{
+            } else {
                 ctx.error('请选择省市', null)
             }
         }
@@ -143,7 +145,7 @@ module.exports = app => {
             }
         }
         //删除经销商
-        async deleteDistributor(){
+        async deleteDistributor() {
             const {
                 ctx
             } = this
@@ -197,15 +199,15 @@ module.exports = app => {
                 distributorId
             } = ctx.request.body
             if (name && carType && provinceId && cityId && distributorId && tel) {
-                if(/^1[34578]\d{9}$/.test(tel)){
+                if (/^1[34578]\d{9}$/.test(tel)) {
                     const data = await ctx.model.Appointment.findAll({
-                        where:{
+                        where: {
                             tel
                         }
                     });
-                    if(data.length>0){
+                    if (data.length > 0) {
                         ctx.error('已经预约过了', null)
-                    }else{
+                    } else {
                         const res = await ctx.service.car.makeAppointment(ctx.request.body)
                         if (res) {
                             ctx.success('获取成功', res)
@@ -213,7 +215,7 @@ module.exports = app => {
                             ctx.error('预约失败!', res)
                         }
                     }
-                }else{
+                } else {
                     ctx.error('请输入正确的手机号!', res)
                 }
             } else {
@@ -221,7 +223,7 @@ module.exports = app => {
             }
         }
         //获取所有的预约
-        async getAllAppointment(){
+        async getAllAppointment() {
             const {
                 ctx,
             } = this
@@ -231,6 +233,90 @@ module.exports = app => {
             } else {
                 ctx.error('预约失败!', res)
             }
+        }
+        //获取所有的第三方 数据
+        async getAllTreeData() {
+            const {
+                ctx,
+            } = this
+            var url = 'http://202.96.191.228:8080/MediaInterface/BaseInfoService.svc?wsdl';
+            var args = {
+                // AuthenticatdKey:'A2019-1825-6670-3095-155435',
+                AuthenticatdKey: 'A0000-000-000-00-00000',
+                RequestObject: [
+                    {
+                        MEDIA_LEAD_ID: '12312451412213124',
+                        FK_DEALER_ID: 'J0403',
+                        CUSTOMER_NAME: 'test',
+                        OPERATE_TYPE: '0',
+                        STATUS: '0',
+                        MOBILE: '13986158511',
+                        SMART_CODE: 'A0000-000-000-00-00000',
+                    }
+                ]
+            };
+
+            let client = await soap.createClientAsync(url);
+            client.SyncSaleClues(args, function (err, result) {
+                ctx.success('获取成功', 12)
+                // if (err) {
+                //     console.log(err);
+                // } else {
+                //     console.log(result.SyncSaleCluesResult)
+                //     if (result.SyncSaleCluesResult) {
+                //         ctx.success('获取成功', result)
+                //     } else {
+                //         ctx.error('error', result)
+                //     }
+                // }
+            });
+            // soap.createClient(url, function (err, client) {
+            //     client.SyncSaleClues(args, function (err, result) {
+            //         if (err) {
+            //             console.log(err);
+            //         } else {
+            //             console.log(result.SyncSaleCluesResult)
+            //             if(result.SyncSaleCluesResult){
+            //                 ctx.success('获取成功', result)
+            //             }else{
+            //                 ctx.error('error', result)
+            //             }
+            //         }
+            //     });
+            // });
+            // const res = await ctx.curl('http://202.96.191.228:8080/MediaInterface/BaseInfoService.svc', {
+            //     method: 'GET',
+            //     timeout: 3000,
+            //     data: {
+            //         // AuthenticatdKey:'A2019-1825-6670-3095-155435',
+            //         AuthenticatdKey: '0000000000000000',
+            //         RequestObject: [
+            //             {
+            //                 MEDIA_LEAD_ID: '124840',
+            //                 FK_DEALER_ID: 'J0403',
+            //                 CUSTOMER_NAME: 'test',
+            //                 OPERATE_TYPE: '0',
+            //                 STATUS: '0',
+            //                 MOBILE: '13986158511',
+            //                 SMART_CODE: 'A0000-000-000-00-00000',
+            //             }
+            //         ]
+            //     }
+            // })
+            // if (res) {
+            //     console.log(res);
+            //     ctx.success('获取成功', res)
+            // } else {
+            //     ctx.error('预约失败!', null)
+            // }
+            // ctx.http.get('http://202.96.191.233:8080/MediaInterface/BaseInfoService.svc', {
+            //     smartcode: 'A2019-1825-6670-3095-155434',
+            //     key: '0000000000000000'
+            // }).then((data) => {
+            //     console.log(data);
+            // }).catch((err) => {
+            //     console.error(err);
+            // });
         }
     }
 

@@ -33,14 +33,23 @@ module.exports = appInfo => {
         },
     };
     config.io = {
-        init: { }, // passed to engine.io
+        init: {}, // passed to engine.io
         namespace: {
-          '/': {
-            connectionMiddleware: [],
-            packetMiddleware: [],
-          },
+            '/': {
+                connectionMiddleware: [],
+                packetMiddleware: [],
+            },
         },
-      };
+    };
+
+    config.http = {
+        headers: {
+            common: {
+                'Content-Type': 'application/json; charset=UTF-8'
+            }
+        },
+        timeout: 10000
+    };
     // config.redis = {
     //     client: {
     //         port: 6379, // Redis port 

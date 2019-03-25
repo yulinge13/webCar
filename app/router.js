@@ -96,6 +96,13 @@ const routers = app => {
             ],
             method: 'get'
         },
+        {
+            url: '/getAllTreeData',
+            middlewareLists: [
+                controller.car.getAllTreeData,
+            ],
+            method: 'get'
+        },
     ]
     routerConfig.forEach(item => {
         router[item.method](item.url, ...item.middlewareLists)

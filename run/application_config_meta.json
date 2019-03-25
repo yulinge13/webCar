@@ -97,6 +97,14 @@
       }
     }
   },
+  "http": {
+    "headers": {
+      "common": {
+        "Content-Type": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\config.default.js"
+      }
+    },
+    "timeout": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\config.default.js"
+  },
   "sequelize": {
     "dialect": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\config.local.js",
     "host": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\config\\config.local.js",
@@ -213,6 +221,7 @@
     "license": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "egg": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-axios": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
       "egg-cors": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
       "egg-mysql": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
       "egg-redis": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
@@ -222,6 +231,7 @@
       "mysql2": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
       "node-uuid": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
       "node-xlsx": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "soap": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
       "xlsx": "C:\\Users\\Administrator\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {

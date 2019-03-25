@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "egg": "^2.11.2",
+    "egg-axios": "^1.1.2",
     "egg-cors": "^2.1.1",
     "egg-mysql": "^3.0.0",
     "egg-redis": "^2.0.0",
@@ -22,6 +23,7 @@
     "mysql2": "^1.6.5",
     "node-uuid": "^1.4.8",
     "node-xlsx": "^0.12.1",
+    "soap": "^0.26.0",
     "xlsx": "^0.14.0"
   },
   "devDependencies": {
