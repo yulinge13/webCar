@@ -2143,3 +2143,19 @@
 2019-03-25 20:12:46,745 INFO 17560 [egg:core] dump config after load, 4ms
 2019-03-25 20:12:46,768 INFO 17560 [egg-watcher:application] watcher start success
 2019-03-25 20:12:46,801 INFO 17560 [egg:core] dump config after ready, 5ms
+2019-03-25 20:13:36,145 INFO 11808 [egg:logger] init all loggers with options: {"dir":"C:\\Users\\Administrator\\Desktop\\node\\webCar\\logs\\demo","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"demo-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-03-25 20:13:36,174 INFO 11808 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-03-25 20:13:36,174 INFO 11808 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-03-25 20:13:36,174 INFO 11808 [egg-schedule]: register schedule C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-03-25 20:13:36,175 INFO 11808 [egg-multipart] file mode enable
+2019-03-25 20:13:36,175 INFO 11808 [egg-multipart] will save temporary files to "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\egg-multipart-tmp\\demo", cleanup job cron: "0 30 4 * * *"
+2019-03-25 20:13:36,481 INFO 11808 [egg-static] starting static serve /public/ -> C:\Users\Administrator\Desktop\node\webCar\app\public
+2019-03-25 20:13:36,481 INFO 11808 [egg-security] use noopen middleware
+2019-03-25 20:13:36,482 INFO 11808 [egg-security] use nosniff middleware
+2019-03-25 20:13:36,483 INFO 11808 [egg-security] use xssProtection middleware
+2019-03-25 20:13:36,483 INFO 11808 [egg-security] use xframe middleware
+2019-03-25 20:13:36,483 INFO 11808 [egg-security] use dta middleware
+2019-03-25 20:13:36,483 INFO 11808 [egg-security] compose 5 middlewares into one security middleware
+2019-03-25 20:13:36,622 INFO 11808 [egg:core] dump config after load, 4ms
+2019-03-25 20:13:36,644 INFO 11808 [egg-watcher:application] watcher start success
+2019-03-25 20:13:36,681 INFO 11808 [egg:core] dump config after ready, 6ms

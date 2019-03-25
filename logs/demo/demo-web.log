@@ -1457,3 +1457,13 @@ hostname: KOTIN
 2019-03-25 20:12:46,803 INFO 17560 [egg-sequelize](17ms) Executed (default): SHOW INDEX FROM `car`
 2019-03-25 20:12:46,806 INFO 17560 [egg-sequelize](20ms) Executed (default): SHOW INDEX FROM `dt_area`
 2019-03-25 20:12:46,809 INFO 17560 [egg-sequelize](5ms) Executed (default): SHOW INDEX FROM `distributor`
+2019-03-25 20:13:36,436 INFO 11808 egg-axios defaults: {"transformRequest":[null],"transformResponse":[null],"timeout":10000,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"headers":{"common":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json; charset=UTF-8"},"delete":{},"get":{},"head":{},"post":{"Content-Type":"application/x-www-form-urlencoded"},"put":{"Content-Type":"application/x-www-form-urlencoded"},"patch":{"Content-Type":"application/x-www-form-urlencoded"}}}
+2019-03-25 20:13:36,659 INFO 11808 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-25 20:13:36,659 INFO 11808 [egg-sequelize](1ms) Executed (default): CREATE TABLE IF NOT EXISTS `appointment` (`id` INTEGER(11) auto_increment , `carType` VARCHAR(255), `name` VARCHAR(255), `tel` VARCHAR(11), `provinceId` INTEGER(11), `cityId` INTEGER(11), `distributorId` INTEGER(11), `creatTime` VARCHAR(40), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-25 20:13:36,661 INFO 11808 [egg-sequelize](3ms) Executed (default): CREATE TABLE IF NOT EXISTS `dt_area` (`id` INTEGER(11) auto_increment , `area_name` VARCHAR(16), `area_code` VARCHAR(128), `area_short` VARCHAR(32), `area_is_hot` VARCHAR(1), `area_sequence` INTEGER(11), `area_parent_id` INTEGER(11), `init_date` DATETIME, `init_addr` VARCHAR(16), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-25 20:13:36,662 INFO 11808 [egg-sequelize](4ms) Executed (default): CREATE TABLE IF NOT EXISTS `car` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-25 20:13:36,663 INFO 11808 [egg-sequelize](2ms) Executed (default): CREATE TABLE IF NOT EXISTS `distributor` (`id` INTEGER auto_increment , `name` VARCHAR(255), `state` VARCHAR(255), `largeArea` VARCHAR(255), `province` INTEGER(11), `prefectureLevelCity` INTEGER(11), `address` VARCHAR(255), `tel` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2019-03-25 20:13:36,665 INFO 11808 [egg-sequelize](3ms) Executed (default): SHOW INDEX FROM `appointment`
+2019-03-25 20:13:36,682 INFO 11808 [egg-sequelize](18ms) Executed (default): SHOW INDEX FROM `car`
+2019-03-25 20:13:36,682 INFO 11808 [egg-sequelize](19ms) Executed (default): SHOW INDEX FROM `dt_area`
+2019-03-25 20:13:36,684 INFO 11808 [egg-sequelize](18ms) Executed (default): SHOW INDEX FROM `distributor`

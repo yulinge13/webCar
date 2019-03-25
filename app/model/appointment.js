@@ -16,7 +16,8 @@ module.exports = app => {
         tel:STRING(11),
         provinceId:INTEGER(11),
         cityId:INTEGER(11),
-        distributorId:INTEGER(11)
+        distributorId:INTEGER(11),
+        creatTime:STRING(40)
     });
     Appointment.sync({
         force:false
