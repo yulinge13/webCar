@@ -1,5 +1,18 @@
 var soap = require('soap');
 const UUID = require('node-uuid')
+const xlsx = require('xlsx');
+
+function getTime(time) {
+    const date = new Date(time - 0)
+    const year = date.getFullYear()
+    const month = date.getMonth() + 1
+    const day = date.getDate()
+    const h = date.getHours()
+    const m = date.getMinutes()
+    const s = date.getSeconds()
+    const str = `${year}年${month}月${day}日 ${h}:${m}:${s}`
+    return str
+}
 module.exports = app => {
     return class CarLists extends app.Controller {
         //注册
@@ -107,7 +120,7 @@ module.exports = app => {
                 provinceId,
                 cityId
             } = ctx.request.query
-            if(provinceId){
+            if (provinceId) {
                 const res = await ctx.service.car.getAllDistributorByArea(ctx.request.query)
                 if (res) {
                     ctx.success('获取成功', res)
@@ -198,8 +211,8 @@ module.exports = app => {
                 cityId,
                 distributorId
             } = ctx.request.body
-            if (name && carType  && tel) {
-                if(/^1[34578]\d{9}$/.test(tel)){
+            if (name && carType && tel) {
+                if (/^1[34578]\d{9}$/.test(tel)) {
                     const data = await ctx.model.Appointment.findAll({
                         where: {
                             tel
@@ -236,87 +249,110 @@ module.exports = app => {
         }
         //获取所有的第三方 数据
         async getAllTreeData() {
+            // const AuthenticatdKey = "A0000-000-000-00-00000"
+            try {
+                const AuthenticatdKey = "A2019-1825-6670-3095-155435"
+                const {
+                    ctx,
+                } = this
+                const {
+                    name,
+                    tel,
+                    distributorVal,
+                    carValue
+                } = ctx.request.body
+                var url = 'http://202.96.191.233:8080/MediaInterface/BaseInfoService.svc?wsdl';
+                var args = {
+                    // AuthenticatdKey:'A2019-1825-6670-3095-155435',
+                    AuthenticatdKey: AuthenticatdKey,
+                    RequestObject: [{
+                        MEDIA_LEAD_ID: UUID.v1().replace(/-/g, ''),
+                        FK_DEALER_ID: distributorVal,
+                        CUSTOMER_NAME: name,
+                        OPERATE_TYPE: '0',
+                        STATUS: '0',
+                        MOBILE: tel,
+                        SMART_CODE: AuthenticatdKey,
+                        SERIES: carValue
+                    }]
+                };
+                const client = await soap.createClientAsync(url)
+                client.SyncSaleClues({
+                    inputParam: JSON.stringify(args)
+                }, (err, res) => {
+                    if (err) {
+                        ctx.success('预约失败！')
+                    }
+                })
+                ctx.success('预约成功!')
+            } catch (err) {
+                ctx.success('预约失败！')
+            }
+        }
+
+        //到处excl
+        async exprotData() {
             const {
                 ctx,
             } = this
-            var url = 'http://202.96.191.228:8080/MediaInterface/BaseInfoService.svc?wsdl';
-            var args = {
-                // AuthenticatdKey:'A2019-1825-6670-3095-155435',
-                AuthenticatdKey: 'A0000-000-000-00-00000',
-                RequestObject: [
-                    {
-                        MEDIA_LEAD_ID: '12312451412213124',
-                        FK_DEALER_ID: 'J0403',
-                        CUSTOMER_NAME: 'test',
-                        OPERATE_TYPE: '0',
-                        STATUS: '0',
-                        MOBILE: '13986158511',
-                        SMART_CODE: 'A0000-000-000-00-00000',
+            try {
+                const res = await ctx.service.car.getAllAppointment()
+                const arr = res.map(i => {
+                    return {
+                        name: i.name,
+                        tel: i.tel,
+                        carType: i.carType,
+                        distributorName: i.distributorName,
+                        provinceName: i.provinceName,
+                        cityName: i.cityName,
+                        creatTime: getTime(i.creatTime)
                     }
-                ]
-            };
-
-            let client = await soap.createClientAsync(url);
-            client.SyncSaleClues(args, function (err, result) {
-                ctx.success('获取成功', 12)
-                // if (err) {
-                //     console.log(err);
-                // } else {
-                //     console.log(result.SyncSaleCluesResult)
-                //     if (result.SyncSaleCluesResult) {
-                //         ctx.success('获取成功', result)
-                //     } else {
-                //         ctx.error('error', result)
-                //     }
-                // }
-            });
-            // soap.createClient(url, function (err, client) {
-            //     client.SyncSaleClues(args, function (err, result) {
-            //         if (err) {
-            //             console.log(err);
-            //         } else {
-            //             console.log(result.SyncSaleCluesResult)
-            //             if(result.SyncSaleCluesResult){
-            //                 ctx.success('获取成功', result)
-            //             }else{
-            //                 ctx.error('error', result)
-            //             }
-            //         }
-            //     });
-            // });
-            // const res = await ctx.curl('http://202.96.191.228:8080/MediaInterface/BaseInfoService.svc', {
-            //     method: 'GET',
-            //     timeout: 3000,
-            //     data: {
-            //         // AuthenticatdKey:'A2019-1825-6670-3095-155435',
-            //         AuthenticatdKey: '0000000000000000',
-            //         RequestObject: [
-            //             {
-            //                 MEDIA_LEAD_ID: '124840',
-            //                 FK_DEALER_ID: 'J0403',
-            //                 CUSTOMER_NAME: 'test',
-            //                 OPERATE_TYPE: '0',
-            //                 STATUS: '0',
-            //                 MOBILE: '13986158511',
-            //                 SMART_CODE: 'A0000-000-000-00-00000',
-            //             }
-            //         ]
-            //     }
-            // })
-            // if (res) {
-            //     console.log(res);
-            //     ctx.success('获取成功', res)
-            // } else {
-            //     ctx.error('预约失败!', null)
-            // }
-            // ctx.http.get('http://202.96.191.233:8080/MediaInterface/BaseInfoService.svc', {
-            //     smartcode: 'A2019-1825-6670-3095-155434',
-            //     key: '0000000000000000'
-            // }).then((data) => {
-            //     console.log(data);
-            // }).catch((err) => {
-            //     console.error(err);
-            // });
+                })
+                const _headers = ['姓名', '手机号', '车型', '经销商', '经销商所在省份', '经销商所在城市', '预约时间']
+                const headerData = ['name', 'tel', 'carType', 'distributorName', 'provinceName', 'cityName', 'creatTime']
+                var headers = _headers
+                    .map((v, i) => Object.assign({}, {
+                        v: v,
+                        position: String.fromCharCode(65 + i) + 1
+                    }))
+                    .reduce((prev, next) => Object.assign({}, prev, {
+                        [next.position]: {
+                            v: next.v
+                        }
+                    }), {});
+                var data = arr
+                    .map((v, i) => headerData.map((k, j) => {
+                        return Object.assign({}, {
+                            v: v[k],
+                            position: String.fromCharCode(65 + j) + (i + 2)
+                        })
+                    }))
+                    .reduce((prev, next) => {
+                        return prev.concat(next)
+                    })
+                    .reduce((prev, next) => {
+                        return Object.assign({}, prev, {
+                            [next.position]: {
+                                v: next.v
+                            }
+                        })
+                    }, {});
+                var output = Object.assign({}, headers, data);
+                var outputPos = Object.keys(output);
+                var ref = outputPos[0] + ':' + outputPos[outputPos.length - 1];
+                var wb = {
+                    SheetNames: ['mySheet'],
+                    Sheets: {
+                        'mySheet': Object.assign({}, output, {
+                            '!ref': ref
+                        })
+                    }
+                };
+                xlsx.writeFile(wb, './app/public/file/预约名单.xlsx')
+                ctx.success('导出成功!', '/public/file/预约名单.xlsx')
+            } catch (err) {
+                ctx.success('导出失败!')
+            }
         }
     }
 

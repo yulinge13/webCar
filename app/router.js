@@ -101,6 +101,13 @@ const routers = app => {
             middlewareLists: [
                 controller.car.getAllTreeData,
             ],
+            method: 'post'
+        },
+        {
+            url: '/exprotData',
+            middlewareLists: [
+                controller.car.exprotData,
+            ],
             method: 'get'
         },
     ]
