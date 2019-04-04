@@ -1,316 +1,316 @@
 {
-  "keys": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+  "keys": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
   "security": {
     "csrf": {
-      "ignoreJSON": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-      "useSession": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "ignoreJSON": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+      "useSession": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
     },
-    "domainWhiteList": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-    "protocolWhiteList": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "protocolWhiteList": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
   "cors": {
-    "origin": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-    "allowMethods": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-    "credentials": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
+    "origin": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "allowMethods": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "credentials": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
   },
   "bodyParser": {
-    "jsonLimit": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-    "formLimit": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-    "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "strict": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "formLimit": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "strict": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "depth": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "depth": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "multipart": {
-    "mode": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-    "autoFields": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "autoFields": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
   "customLogger": {
-    "scheduleLogger": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
+    "scheduleLogger": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
   },
   "io": {
-    "init": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+    "init": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
     "namespace": {
       "/": {
-        "connectionMiddleware": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
-        "packetMiddleware": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
+        "connectionMiddleware": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js",
+        "packetMiddleware": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
       }
     }
   },
   "http": {
     "headers": {
       "common": {
-        "Content-Type": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
+        "Content-Type": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
       }
     },
-    "timeout": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
+    "timeout": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.default.js"
   },
   "sequelize": {
-    "dialect": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-    "host": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-    "port": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-    "username": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-    "password": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-    "database": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+    "dialect": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+    "host": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+    "port": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+    "username": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+    "password": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+    "database": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
     "pool": {
-      "max": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-      "min": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-      "idle": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js"
+      "max": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+      "min": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+      "idle": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js"
     },
     "define": {
-      "timestamps": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
-      "freezeTableName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js"
+      "timestamps": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js",
+      "freezeTableName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js"
     },
-    "timezone": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js"
+    "timezone": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\config\\config.local.js"
   },
   "session": {
-    "maxAge": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-watcher\\config\\config.default.js"
     }
   },
   "development": {
-    "watchDirs": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-logrotator\\config\\config.default.js"
   },
   "static": {
-    "prefix": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-static\\config\\config.default.js"
   },
   "view": {
-    "root": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js",
-    "defaultViewEngine": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js"
+    "root": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-view\\config\\config.default.js"
   },
   "mysql": {
     "default": {
-      "database": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js",
-      "connectionLimit": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js"
+      "database": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js",
+      "connectionLimit": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js"
     },
-    "app": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js",
-    "agent": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js"
+    "app": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js",
+    "agent": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-mysql\\config\\config.default.js"
   },
   "redis": {
-    "default": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\config.default.js",
-    "app": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\config.default.js",
-    "agent": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\config.default.js"
+    "default": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\config.default.js",
+    "app": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\config.default.js",
+    "agent": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg-redis\\config\\config.default.js"
   },
-  "env": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "name": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "env": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "name": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
   "pkg": {
-    "name": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "version": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "description": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "main": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "name": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "version": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "description": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "main": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
     "scripts": {
-      "test": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "dev": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "start": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "stop": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "test": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "dev": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "start": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "stop": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     },
-    "author": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "license": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "author": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "license": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
-      "egg": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "egg-axios": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "egg-cors": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "egg-mysql": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "egg-redis": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "egg-sequelize": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "egg-socket.io": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "jsonwebtoken": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "mysql2": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "node-uuid": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "node-xlsx": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "soap": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "xlsx": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "egg": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-axios": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-mysql": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-redis": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-sequelize": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "egg-socket.io": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "jsonwebtoken": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "mysql2": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "node-uuid": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "node-xlsx": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "soap": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "xlsx": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "egg-bin": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "egg-bin": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     }
   },
-  "baseDir": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
   "dump": {
-    "ignore": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
   "logger": {
-    "dir": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "env": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "level": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "dir": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "env": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "level": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
     "request": {
-      "timeout": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketKeepAliveTimeout": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketKeepAliveTimeout": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "logging": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "enable": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "logging": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
-  "coreMiddleware": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "port": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+      "path": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "port": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
   },
-  "onClientError": "c:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "C:\\Users\\linge l yu\\Desktop\\node\\webCar\\node_modules\\egg\\config\\config.default.js"
 }

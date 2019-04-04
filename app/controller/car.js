@@ -1,6 +1,7 @@
 var soap = require('soap');
 const UUID = require('node-uuid')
 const xlsx = require('xlsx');
+const fs = require('fs')
 
 function getTime(time) {
     const date = new Date(time - 0)
@@ -240,11 +241,26 @@ module.exports = app => {
             const {
                 ctx,
             } = this
-            const res = await ctx.service.car.getAllAppointment()
-            if (res) {
-                ctx.success('获取成功', res)
+            const {
+                from,
+                pageSize,
+                pageNum
+            } = ctx.query
+            if (from && pageSize && pageNum) {
+                const res = await ctx.service.car.getAllAppointment(ctx.query)
+                const total = await ctx.service.car.getAllAppointmentTotal({
+                    from
+                })
+                if (res) {
+                    ctx.success('获取成功', {
+                        lists: res,
+                        total
+                    })
+                } else {
+                    ctx.error('获取失败!', res)
+                }
             } else {
-                ctx.error('预约失败!', res)
+                ctx.error('获取失败!', res)
             }
         }
         //获取所有的第三方 数据
@@ -296,7 +312,7 @@ module.exports = app => {
                 ctx,
             } = this
             try {
-                const res = await ctx.service.car.getAllAppointment()
+                const res = await ctx.service.car.getAllAppointment(ctx.query)
                 const arr = res.map(i => {
                     return {
                         name: i.name,
@@ -351,7 +367,20 @@ module.exports = app => {
                 xlsx.writeFile(wb, './app/public/file/预约名单.xlsx')
                 ctx.success('导出成功!', '/public/file/预约名单.xlsx')
             } catch (err) {
-                ctx.success('导出失败!')
+                ctx.error('导出失败!')
+            }
+        }
+
+        //获取来源列表
+        async getFromLists() {
+            const {
+                ctx,
+            } = this
+            const res = await ctx.service.car.getFromLists()
+            if (res) {
+                ctx.success('获取成功', res)
+            } else {
+                ctx.error('获取失败!', res)
             }
         }
     }

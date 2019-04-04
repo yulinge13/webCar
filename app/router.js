@@ -96,6 +96,7 @@ const routers = app => {
             ],
             method: 'get'
         },
+        //对接第三方 预约功能
         {
             url: '/getAllTreeData',
             middlewareLists: [
@@ -103,10 +104,20 @@ const routers = app => {
             ],
             method: 'post'
         },
+        //导出
         {
             url: '/exprotData',
             middlewareLists: [
+                isParmas(['from', 'pageSize', 'pageNum']),
                 controller.car.exprotData,
+            ],
+            method: 'get'
+        },
+        //获取所有来源列表
+        {
+            url: '/getFromLists',
+            middlewareLists: [
+                controller.car.getFromLists,
             ],
             method: 'get'
         },
