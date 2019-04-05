@@ -210,10 +210,11 @@ module.exports = app => {
                 tel,
                 provinceId,
                 cityId,
-                distributorId
+                distributorId,
+                from
             } = ctx.request.body
             if (name && carType && tel) {
-                if (/^1[34578]\d{9}$/.test(tel)) {
+                if (/^1[23456789]\d{9}$/.test(tel)) {
                     const data = await ctx.model.Appointment.findAll({
                         where: {
                             tel
