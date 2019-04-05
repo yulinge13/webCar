@@ -1,462 +1,55 @@
-2019-03-24 15:39:24,139 ERROR 5144 nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at Utils.Promise.tap.then.catch.err (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:139:19)
-From previous event:
-    at ConnectionManager.connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:136:13)
-    at sequelize.runHooks.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:50)
-    at runCallback (timers.js:810:20)
-    at tryOnImmediate (timers.js:768:5)
-    at processImmediate [as _immediateCallback] (timers.js:745:5)
-From previous event:
-    at ConnectionManager._connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:8)
-    at ConnectionManager.getConnection (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:250:46)
-    at Promise.try (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:554:34)
-From previous event:
-    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:64)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:39:21
-    at retryAsPromised (C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:29:10)
-    at Sequelize.query (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:28)
-    at Sequelize.authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:783:17)
-    at authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:129:22)
-    at Promise.all.databases.map.database (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:49)
-    at Array.map (<anonymous>)
-    at app.beforeStart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:33)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:42)
-    at process.nextTick (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\lifecycle.js:240:13)
-    at _combinedTickCallback (internal/process/next_tick.js:132:7)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-    at Function.Module.runMain (module.js:696:11)
-    at startup (bootstrap_node.js:204:16)
-    at bootstrap_node.js:625:3
-name: "SequelizeConnectionRefusedError"
-parent: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-original: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-pid: 5144
+2019-04-01 00:00:03,110 ERROR 14960 [-/::1/-/16ms GET /exprotData] nodejs.Error: Bad range (0): A1:k150
+    at check_ws (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:12782:60)
+    at check_wb (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:14532:48)
+    at writeSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20417:2)
+    at Object.writeFileSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20469:9)
+    at CarLists.exprotData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:316:18)
+    at <anonymous>
+
+pid: 14960
 hostname: KOTIN
 
-2019-03-24 15:39:24,139 ERROR 5144 nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at Utils.Promise.tap.then.catch.err (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:139:19)
-From previous event:
-    at ConnectionManager.connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:136:13)
-    at sequelize.runHooks.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:50)
-    at runCallback (timers.js:810:20)
-    at tryOnImmediate (timers.js:768:5)
-    at processImmediate [as _immediateCallback] (timers.js:745:5)
-From previous event:
-    at ConnectionManager._connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:8)
-    at ConnectionManager.getConnection (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:250:46)
-    at Promise.try (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:554:34)
-From previous event:
-    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:64)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:39:21
-    at retryAsPromised (C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:29:10)
-    at Sequelize.query (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:28)
-    at Sequelize.authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:783:17)
-    at authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:129:22)
-    at Promise.all.databases.map.database (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:49)
-    at Array.map (<anonymous>)
-    at app.beforeStart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:33)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:42)
-    at process.nextTick (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\lifecycle.js:240:13)
-    at _combinedTickCallback (internal/process/next_tick.js:132:7)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-    at Function.Module.runMain (module.js:696:11)
-    at startup (bootstrap_node.js:204:16)
-    at bootstrap_node.js:625:3
-name: "SequelizeConnectionRefusedError"
-parent: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-original: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-pid: 5144
+2019-04-01 00:10:16,799 ERROR 16996 [-/::1/-/18ms GET /exprotData] nodejs.Error: Bad range (0): A1:k10
+    at check_ws (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:12782:60)
+    at check_wb (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:14532:48)
+    at writeSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20417:2)
+    at Object.writeFileSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20469:9)
+    at CarLists.exprotData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:316:18)
+    at <anonymous>
+
+pid: 16996
 hostname: KOTIN
 
-2019-03-24 15:39:24,141 ERROR 5144 nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at Utils.Promise.tap.then.catch.err (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:139:19)
-From previous event:
-    at ConnectionManager.connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:136:13)
-    at sequelize.runHooks.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:50)
-    at runCallback (timers.js:810:20)
-    at tryOnImmediate (timers.js:768:5)
-    at processImmediate [as _immediateCallback] (timers.js:745:5)
-From previous event:
-    at ConnectionManager._connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:8)
-    at ConnectionManager.getConnection (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:250:46)
-    at Promise.try (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:554:34)
-From previous event:
-    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:64)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:39:21
-    at retryAsPromised (C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:29:10)
-    at Sequelize.query (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:28)
-    at Sequelize.authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:783:17)
-    at authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:129:22)
-    at Promise.all.databases.map.database (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:49)
-    at Array.map (<anonymous>)
-    at app.beforeStart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:33)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:42)
-    at process.nextTick (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\lifecycle.js:240:13)
-    at _combinedTickCallback (internal/process/next_tick.js:132:7)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-    at Function.Module.runMain (module.js:696:11)
-    at startup (bootstrap_node.js:204:16)
-    at bootstrap_node.js:625:3
-name: "SequelizeConnectionRefusedError"
-parent: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-original: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-pid: 5144
+2019-04-01 00:10:18,761 ERROR 16996 [-/::1/-/11ms GET /exprotData] nodejs.Error: Bad range (0): A1:k10
+    at check_ws (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:12782:60)
+    at check_wb (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:14532:48)
+    at writeSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20417:2)
+    at Object.writeFileSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20469:9)
+    at CarLists.exprotData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:316:18)
+    at <anonymous>
+
+pid: 16996
 hostname: KOTIN
 
-2019-03-24 15:39:24,141 ERROR 5144 nodejs.SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at Utils.Promise.tap.then.catch.err (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:139:19)
-From previous event:
-    at ConnectionManager.connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:136:13)
-    at sequelize.runHooks.then (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:50)
-    at runCallback (timers.js:810:20)
-    at tryOnImmediate (timers.js:768:5)
-    at processImmediate [as _immediateCallback] (timers.js:745:5)
-From previous event:
-    at ConnectionManager._connect (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:320:8)
-    at ConnectionManager.getConnection (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:250:46)
-    at Promise.try (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:554:34)
-From previous event:
-    at Promise.resolve.retryParameters (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:64)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:39:21
-    at retryAsPromised (C:\Users\Administrator\Desktop\node\webCar\node_modules\retry-as-promised\index.js:29:10)
-    at Sequelize.query (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:28)
-    at Sequelize.authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:783:17)
-    at authenticate (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:129:22)
-    at Promise.all.databases.map.database (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:49)
-    at Array.map (<anonymous>)
-    at app.beforeStart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-sequelize\lib\loader.js:40:33)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:42)
-    at process.nextTick (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\lifecycle.js:240:13)
-    at _combinedTickCallback (internal/process/next_tick.js:132:7)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-    at Function.Module.runMain (module.js:696:11)
-    at startup (bootstrap_node.js:204:16)
-    at bootstrap_node.js:625:3
-name: "SequelizeConnectionRefusedError"
-parent: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-original: {"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":3306,"fatal":true}
-pid: 5144
+2019-04-01 00:10:19,191 ERROR 16996 [-/::1/-/9ms GET /exprotData] nodejs.Error: Bad range (0): A1:k10
+    at check_ws (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:12782:60)
+    at check_wb (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:14532:48)
+    at writeSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20417:2)
+    at Object.writeFileSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20469:9)
+    at CarLists.exprotData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:316:18)
+    at <anonymous>
+
+pid: 16996
 hostname: KOTIN
 
-2019-03-24 15:44:33,582 ERROR 14248 [-/::1/-/4ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:240:27)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 14248
-hostname: KOTIN
+2019-04-01 00:18:22,478 ERROR 13472 [-/::1/-/41ms GET /exprotData] nodejs.Error: Bad range (0): A1:k150
+    at check_ws (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:12782:60)
+    at check_wb (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:14532:48)
+    at writeSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20417:2)
+    at Object.writeFileSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:20469:9)
+    at CarLists.exprotData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:317:18)
+    at <anonymous>
 
-2019-03-24 15:44:34,623 ERROR 14248 [-/::1/-/1ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:240:27)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 14248
-hostname: KOTIN
-
-2019-03-24 15:45:17,988 ERROR 11500 [-/::1/-/3ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:240:22)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 11500
-hostname: KOTIN
-
-2019-03-24 15:45:40,500 ERROR 2376 [-/::1/-/4ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:241:22)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 2376
-hostname: KOTIN
-
-2019-03-24 15:46:06,100 ERROR 14608 [-/::1/-/6ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:241:22)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 14608
-hostname: KOTIN
-
-2019-03-24 15:48:00,423 ERROR 15200 [-/::1/-/5ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:241:22)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 15200
-hostname: KOTIN
-
-2019-03-24 15:48:23,900 ERROR 15200 [-/::1/-/1ms GET /getAllTreeData] nodejs.TypeError: Cannot read property 'get' of undefined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:241:22)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-pid: 15200
-hostname: KOTIN
-
-2019-03-25 19:12:09,273 ERROR 15348 nodejs.TypeError: Cannot read property 'SyncSaleClues' of undefined (uncaughtException throw 1 times on pid:15348)
-    at C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:259:24
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\soap.js:59:5
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\soap.js:23:18
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\wsdl.js:2313:9
-    at Request._callback (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\http.js:134:16)
-    at self.callback (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:185:22)
-    at emitOne (events.js:116:13)
-    at Request.emit (events.js:211:7)
-    at Request.onRequestError (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:881:8)
-    at emitOne (events.js:116:13)
-    at ClientRequest.emit (events.js:211:7)
-    at Socket.socketErrorListener (_http_client.js:387:9)
-    at emitOne (events.js:116:13)
-    at Socket.emit (events.js:211:7)
-    at emitErrorNT (internal/streams/destroy.js:66:8)
-    at _combinedTickCallback (internal/process/next_tick.js:139:11)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-
-pid: 15348
-hostname: KOTIN
-
-2019-03-25 19:12:53,410 ERROR 16496 nodejs.ReferenceError: result is not defined (uncaughtException throw 1 times on pid:16496)
-    at C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:263:46
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:191:7
-    at finish (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:426:5)
-    at parseSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:388:12)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:364:14
-    at Request._callback (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\http.js:137:7)
-    at Request.self.callback (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:185:22)
-    at emitTwo (events.js:126:13)
-    at Request.emit (events.js:214:7)
-    at Request.<anonymous> (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:1161:10)
-    at emitOne (events.js:116:13)
-    at Request.emit (events.js:211:7)
-    at IncomingMessage.<anonymous> (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:1083:12)
-    at Object.onceWrapper (events.js:313:30)
-    at emitNone (events.js:111:20)
-    at IncomingMessage.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1064:12)
-    at _combinedTickCallback (internal/process/next_tick.js:139:11)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-
-pid: 16496
-hostname: KOTIN
-
-2019-03-25 19:35:49,407 ERROR 2980 [-/::1/-/4ms GET /getAllTreeData] nodejs.ReferenceError: URL is not defined
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:259:55)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-
-pid: 2980
-hostname: KOTIN
-
-2019-03-25 19:37:41,303 ERROR 9808 nodejs.TypeError: callback is not a function (uncaughtException throw 1 times on pid:9808)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:191:7
-    at finish (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:426:5)
-    at parseSync (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:388:12)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\client.js:364:14
-    at Request._callback (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\http.js:137:7)
-    at Request.self.callback (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:185:22)
-    at emitTwo (events.js:126:13)
-    at Request.emit (events.js:214:7)
-    at Request.<anonymous> (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:1161:10)
-    at emitOne (events.js:116:13)
-    at Request.emit (events.js:211:7)
-    at IncomingMessage.<anonymous> (C:\Users\Administrator\Desktop\node\webCar\node_modules\request\request.js:1083:12)
-    at Object.onceWrapper (events.js:313:30)
-    at emitNone (events.js:111:20)
-    at IncomingMessage.emit (events.js:208:7)
-    at endReadableNT (_stream_readable.js:1064:12)
-    at _combinedTickCallback (internal/process/next_tick.js:139:11)
-    at process._tickCallback (internal/process/next_tick.js:181:9)
-
-pid: 9808
-hostname: KOTIN
-
-2019-03-25 19:38:55,660 ERROR 18204 [-/undefined/-/4410ms GET /getAllTreeData] nodejs.ECONNRESETError: read ECONNRESET
-    at TCP.onread (net.js:622:25)
-From previous event:
-    at Object.createClientAsync (C:\Users\Administrator\Desktop\node\webCar\node_modules\soap\lib\soap.js:67:10)
-    at CarLists.getAllTreeData (C:\Users\Administrator\Desktop\node\webCar\app\controller\car.js:259:37)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
-    at wrappedController (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at next (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at multipart (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at i18n (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at dta (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\dta.js:12:12)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xframe (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
-    at dispatch (C:\Users\Administrator\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
-    at xssProtection (C:\Users\Administrator\Desktop\node\webCar\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
-headerSent: true
-name: "ECONNRESETError"
-pid: 18204
+pid: 13472
 hostname: KOTIN
 
