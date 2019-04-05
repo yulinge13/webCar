@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2019-04-01 00:00:03,110 ERROR 14960 [-/::1/-/16ms GET /exprotData] nodejs.Error: Bad range (0): A1:k150
     at check_ws (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:12782:60)
     at check_wb (C:\Users\Administrator\Desktop\node\webCar\node_modules\xlsx\xlsx.js:14532:48)
@@ -52,4 +53,120 @@ hostname: KOTIN
 
 pid: 13472
 hostname: KOTIN
+=======
+2019-03-28 13:01:44,040 ERROR 23508 nodejs.ClusterClientNoResponseError: client no response in 3777804ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (c:\Users\linge l yu\Desktop\node\webCar\node_modules\cluster-client\lib\leader.js:74:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+name: "ClusterClientNoResponseError"
+pid: 23508
+hostname: LYU129PRI2
+
+2019-04-04 11:17:26,272 ERROR 15304 [-/::1/-/14ms GET /getAllAppointment?pageNum=1&pageSize=10&from=1] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE a.from = 1 LIMIT 0,10' at line 4
+    at Query.formatError (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\connection.js:79:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+From previous event:
+    at Query.run (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:558:20)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\linge l yu\Desktop\node\webCar\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:28)
+    at CarLists.getAllAppointment (C:\Users\linge l yu\Desktop\node\webCar\app\service\car.js:141:37)
+    at CarLists.getAllAppointment (C:\Users\linge l yu\Desktop\node\webCar\app\controller\car.js:249:51)
+    at Object.callFn (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE a.from = 1 LIMIT 0,10' at line 4","sql":"SELECT \n            a.*,\n            dis.name as distributorName,\n            c.area_name as cityName,\n            d.area_name as provinceName\n        FROM \n            appointment a LEFT JOIN distributor dis \n        ON  \n            a.distributorId = dis.id LEFT JOIN dt_area d\n        ON \n            dis.province = d.id LEFT JOIN dt_area c \n        ON \n            dis.prefectureLevelCity = c.id ORDER BY a.creatTime DESC\n        WHERE a.from = 1 LIMIT 0,10"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE a.from = 1 LIMIT 0,10' at line 4","sql":"SELECT \n            a.*,\n            dis.name as distributorName,\n            c.area_name as cityName,\n            d.area_name as provinceName\n        FROM \n            appointment a LEFT JOIN distributor dis \n        ON  \n            a.distributorId = dis.id LEFT JOIN dt_area d\n        ON \n            dis.province = d.id LEFT JOIN dt_area c \n        ON \n            dis.prefectureLevelCity = c.id ORDER BY a.creatTime DESC\n        WHERE a.from = 1 LIMIT 0,10"}
+sql: "SELECT \n            a.*,\n            dis.name as distributorName,\n            c.area_name as cityName,\n            d.area_name as provinceName\n        FROM \n            appointment a LEFT JOIN distributor dis \n        ON  \n            a.distributorId = dis.id LEFT JOIN dt_area d\n        ON \n            dis.province = d.id LEFT JOIN dt_area c \n        ON \n            dis.prefectureLevelCity = c.id ORDER BY a.creatTime DESC\n        WHERE a.from = 1 LIMIT 0,10"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 15304
+hostname: LYU129PRI2
+
+2019-04-04 14:21:58,656 ERROR 17304 [-/::1/-/16ms GET /getAllAppointment?pageNum=1&pageSize=10&from=1] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'count(a.id) as total
+        FROM 
+            appointment a LEFT JOIN distribut' at line 4
+        FROM 
+            appointment a LEFT JOIN distribut' at line 4
+    at Query.formatError (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.execute (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\commands\command.js:30:14)
+    at Connection.handlePacket (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\connection.js:72:12)
+    at PacketParser.executeStart (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (C:\Users\linge l yu\Desktop\node\webCar\node_modules\mysql2\lib\connection.js:79:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:597:20)
+From previous event:
+    at Query.run (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\dialects\mysql\query.js:57:12)
+    at Promise.try.then.connection (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:558:20)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+From previous event:
+    at Promise.resolve.retryParameters (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:555:8)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\retry-as-promised\index.js:39:21
+    at retryAsPromised (C:\Users\linge l yu\Desktop\node\webCar\node_modules\retry-as-promised\index.js:29:10)
+    at Sequelize.query (C:\Users\linge l yu\Desktop\node\webCar\node_modules\sequelize\lib\sequelize.js:454:28)
+    at CarLists.getAllAppointment (C:\Users\linge l yu\Desktop\node\webCar\app\service\car.js:142:37)
+    at CarLists.getAllAppointment (C:\Users\linge l yu\Desktop\node\webCar\app\controller\car.js:249:51)
+    at Object.callFn (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at Object.classControllerMiddleware (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\utils\index.js:36:21)
+    at wrappedController (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-core\lib\utils\router.js:322:18)
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at multipart (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-multipart\app\middleware\multipart.js:34:38)
+    at dispatch (C:\Users\linge l yu\Desktop\node\webCar\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'count(a.id) as total\n        FROM \n            appointment a LEFT JOIN distribut' at line 4","sql":"SELECT \n            a.*,\n            dis.name as distributorName,\n            c.area_name as cityName,\n            d.area_name as provinceName\n            count(a.id) as total\n        FROM \n            appointment a LEFT JOIN distributor dis \n        ON  \n            a.distributorId = dis.id LEFT JOIN dt_area d\n        ON \n            dis.province = d.id LEFT JOIN dt_area c \n        ON \n            dis.prefectureLevelCity = c.id \n        WHERE a.from = 1 ORDER BY a.creatTime DESC LIMIT 0,10"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'count(a.id) as total\n        FROM \n            appointment a LEFT JOIN distribut' at line 4","sql":"SELECT \n            a.*,\n            dis.name as distributorName,\n            c.area_name as cityName,\n            d.area_name as provinceName\n            count(a.id) as total\n        FROM \n            appointment a LEFT JOIN distributor dis \n        ON  \n            a.distributorId = dis.id LEFT JOIN dt_area d\n        ON \n            dis.province = d.id LEFT JOIN dt_area c \n        ON \n            dis.prefectureLevelCity = c.id \n        WHERE a.from = 1 ORDER BY a.creatTime DESC LIMIT 0,10"}
+sql: "SELECT \n            a.*,\n            dis.name as distributorName,\n            c.area_name as cityName,\n            d.area_name as provinceName\n            count(a.id) as total\n        FROM \n            appointment a LEFT JOIN distributor dis \n        ON  \n            a.distributorId = dis.id LEFT JOIN dt_area d\n        ON \n            dis.province = d.id LEFT JOIN dt_area c \n        ON \n            dis.prefectureLevelCity = c.id \n        WHERE a.from = 1 ORDER BY a.creatTime DESC LIMIT 0,10"
+headers: {"Access-Control-Allow-Origin":"*","Access-Control-Allow-Credentials":"true"}
+pid: 17304
+hostname: LYU129PRI2
+>>>>>>> af4807185ddd3d54537332b396e55fbaefe34008
 

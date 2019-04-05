@@ -1,6 +1,8 @@
 var soap = require('soap');
 const UUID = require('node-uuid')
 const xlsx = require('xlsx');
+const fs = require('fs')
+
 function getTime(time) {
     const date = new Date(time - 0)
     const year = date.getFullYear()
@@ -239,11 +241,26 @@ module.exports = app => {
             const {
                 ctx,
             } = this
-            const res = await ctx.service.car.getAllAppointment()
-            if (res) {
-                ctx.success('获取成功', res)
+            const {
+                from,
+                pageSize,
+                pageNum
+            } = ctx.query
+            if (from && pageSize && pageNum) {
+                const res = await ctx.service.car.getAllAppointment(ctx.query)
+                const total = await ctx.service.car.getAllAppointmentTotal({
+                    from
+                })
+                if (res) {
+                    ctx.success('获取成功', {
+                        lists: res,
+                        total
+                    })
+                } else {
+                    ctx.error('获取失败!', res)
+                }
             } else {
-                ctx.error('预约失败!', res)
+                ctx.error('获取失败!', res)
             }
         }
         //获取所有的第三方 数据
@@ -264,21 +281,21 @@ module.exports = app => {
                 var args = {
                     // AuthenticatdKey:'A2019-1825-6670-3095-155435',
                     AuthenticatdKey: AuthenticatdKey,
-                    RequestObject: [
-                        {
-                            MEDIA_LEAD_ID: UUID.v1().replace(/-/g, ''),
-                            FK_DEALER_ID: distributorVal,
-                            CUSTOMER_NAME: name,
-                            OPERATE_TYPE: '0',
-                            STATUS: '0',
-                            MOBILE: tel,
-                            SMART_CODE: AuthenticatdKey,
-                            SERIES: carValue
-                        }
-                    ]
+                    RequestObject: [{
+                        MEDIA_LEAD_ID: UUID.v1().replace(/-/g, ''),
+                        FK_DEALER_ID: distributorVal,
+                        CUSTOMER_NAME: name,
+                        OPERATE_TYPE: '0',
+                        STATUS: '0',
+                        MOBILE: tel,
+                        SMART_CODE: AuthenticatdKey,
+                        SERIES: carValue
+                    }]
                 };
                 const client = await soap.createClientAsync(url)
-                client.SyncSaleClues({ inputParam: JSON.stringify(args) }, (err, res) => {
+                client.SyncSaleClues({
+                    inputParam: JSON.stringify(args)
+                }, (err, res) => {
                     if (err) {
                         ctx.success('预约失败！')
                     }
@@ -295,7 +312,7 @@ module.exports = app => {
                 ctx,
             } = this
             try {
-                const res = await ctx.service.car.getAllAppointment()
+                const res = await ctx.service.car.getAllAppointment(ctx.query)
                 const arr = res.map(i => {
                     return {
                         name: i.name,
@@ -310,17 +327,31 @@ module.exports = app => {
                 const _headers = ['姓名', '手机号', '车型', '经销商', '经销商所在省份', '经销商所在城市', '预约时间']
                 const headerData = ['name', 'tel', 'carType', 'distributorName', 'provinceName', 'cityName', 'creatTime']
                 var headers = _headers
-                    .map((v, i) => Object.assign({}, { v: v, position: String.fromCharCode(65 + i) + 1 }))
-                    .reduce((prev, next) => Object.assign({}, prev, { [next.position]: { v: next.v } }), {});
+                    .map((v, i) => Object.assign({}, {
+                        v: v,
+                        position: String.fromCharCode(65 + i) + 1
+                    }))
+                    .reduce((prev, next) => Object.assign({}, prev, {
+                        [next.position]: {
+                            v: next.v
+                        }
+                    }), {});
                 var data = arr
                     .map((v, i) => headerData.map((k, j) => {
-                        return Object.assign({}, { v: v[k], position: String.fromCharCode(65 + j) + (i + 2) })
+                        return Object.assign({}, {
+                            v: v[k],
+                            position: String.fromCharCode(65 + j) + (i + 2)
+                        })
                     }))
                     .reduce((prev, next) => {
                         return prev.concat(next)
                     })
                     .reduce((prev, next) => {
-                        return Object.assign({}, prev, { [next.position]: { v: next.v } })
+                        return Object.assign({}, prev, {
+                            [next.position]: {
+                                v: next.v
+                            }
+                        })
                     }, {});
                 var output = Object.assign({}, headers, data);
                 var outputPos = Object.keys(output);
@@ -328,13 +359,28 @@ module.exports = app => {
                 var wb = {
                     SheetNames: ['mySheet'],
                     Sheets: {
-                        'mySheet': Object.assign({}, output, { '!ref': ref })
+                        'mySheet': Object.assign({}, output, {
+                            '!ref': ref
+                        })
                     }
                 };
                 xlsx.writeFile(wb, './app/public/file/预约名单.xlsx')
-                ctx.success('导出成功!','/public/file/预约名单.xlsx')
-            }catch(err){
-                ctx.success('导出失败!')
+                ctx.success('导出成功!', '/public/file/预约名单.xlsx')
+            } catch (err) {
+                ctx.error('导出失败!')
+            }
+        }
+
+        //获取来源列表
+        async getFromLists() {
+            const {
+                ctx,
+            } = this
+            const res = await ctx.service.car.getFromLists()
+            if (res) {
+                ctx.success('获取成功', res)
+            } else {
+                ctx.error('获取失败!', res)
             }
         }
     }

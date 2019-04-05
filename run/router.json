@@ -1,4 +1,4 @@
-[
+1[
   {
     "name": null,
     "methods": [
@@ -159,6 +159,20 @@
     "paramNames": [],
     "path": "/exprotData",
     "regexp": "/^\\/exprotData(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/getFromLists",
+    "regexp": "/^\\/getFromLists(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

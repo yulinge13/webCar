@@ -11,16 +11,21 @@ module.exports = app => {
             primaryKey: true,
             autoIncrement: true
         },
-        carType:STRING(255),
-        name:STRING(255),
-        tel:STRING(11),
-        provinceId:INTEGER(11),
-        cityId:INTEGER(11),
-        distributorId:INTEGER(11),
-        creatTime:STRING(40)
+        carType: STRING(255),
+        name: STRING(255),
+        tel: STRING(11),
+        provinceId: INTEGER(11),
+        cityId: INTEGER(11),
+        distributorId: INTEGER(11),
+        creatTime: STRING(40),
+        from: {
+            type: INTEGER(2),
+            defaultValue: 1
+        }
     });
     Appointment.sync({
-        force:false
+        force: false,
+        alter: true
     })
     return Appointment;
 };

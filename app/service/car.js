@@ -56,9 +56,9 @@ class CarLists extends Service {
             d.province = a.id LEFT JOIN dt_area c 
         ON 
             d.prefectureLevelCity = c.id where d.province = ${provinceId}`
-        if(cityId){
-            sql +=` and d.prefectureLevelCity = ${cityId}` 
-        }    
+        if (cityId) {
+            sql += ` and d.prefectureLevelCity = ${cityId}`
+        }
         const res = await ctx.model.query(sql, {
             type: this.app.Sequelize.QueryTypes.SELECT
         })
@@ -78,12 +78,14 @@ class CarLists extends Service {
     }
     //删除经销商
     async deleteDistributor(id) {
-        const {ctx} = this;
+        const {
+            ctx
+        } = this;
         const res = await ctx.model.Distributor.findById(id);
-        if(res){
+        if (res) {
             await res.destroy();
             return true
-        }else{
+        } else {
             return false
         }
     }
@@ -107,12 +109,17 @@ class CarLists extends Service {
         } = this
         const res = await ctx.model.Appointment.create({
             ...params,
-            creatTime:new Date().getTime()
+            creatTime: new Date().getTime()
         });
         return res;
     }
     //获取所有的预约
-    async getAllAppointment() {
+    async getAllAppointment(params) {
+        const {
+            from,
+            pageSize,
+            pageNum
+        } = params
         const {
             ctx,
         } = this
@@ -128,11 +135,45 @@ class CarLists extends Service {
         ON 
             dis.province = d.id LEFT JOIN dt_area c 
         ON 
-            dis.prefectureLevelCity = c.id ORDER BY a.creatTime DESC`
+            dis.prefectureLevelCity = c.id 
+        WHERE a.from = ${from} ORDER BY a.creatTime DESC LIMIT ${(pageNum -1) * pageSize},${pageSize}
+            `
         const res = await ctx.model.query(sql, {
             type: this.app.Sequelize.QueryTypes.SELECT
         })
         return res;
+    }
+    //获取预约的总数
+    async getAllAppointmentTotal(params) {
+        const {
+            from,
+        } = params
+        const {
+            ctx,
+        } = this
+        let sql = `SELECT 
+            count(a.id) as total
+        FROM 
+            appointment a
+        WHERE a.from = ${from}
+        `
+        const res = await ctx.model.query(sql, {
+            type: this.app.Sequelize.QueryTypes.SELECT
+        })
+        return res[0].total;
+    }
+    //获取来源列表
+    async getFromLists() {
+        const {
+            ctx,
+        } = this
+        let sql = `
+            SELECT a.from FROM appointment a GROUP BY a.from
+        `
+        const res = await ctx.model.query(sql, {
+            type: this.app.Sequelize.QueryTypes.SELECT
+        })
+        return res
     }
 }
 

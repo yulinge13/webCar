@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+2019-04-04 10:41:33,807 INFO 10752 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-04-05 04:30:00.000
+2019-04-04 10:41:33,807 INFO 10752 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-04-05 00:00:00.000
+2019-04-04 10:41:33,807 INFO 10752 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-04-05 00:00:01.000
+2019-04-04 10:51:31,251 INFO 5804 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-04-05 04:30:00.000
+2019-04-04 10:51:31,251 INFO 5804 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-04-05 00:00:00.000
+2019-04-04 10:51:31,252 INFO 5804 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-04-05 00:00:01.000
+2019-04-04 14:35:42,651 INFO 13516 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute at 2019-04-05 04:30:00.000
+2019-04-04 14:35:42,652 INFO 13516 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute at 2019-04-05 00:00:00.000
+2019-04-04 14:35:42,652 INFO 13516 [Timer] C:\Users\linge l yu\Desktop\node\webCar\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute at 2019-04-05 00:00:01.000
+>>>>>>> af4807185ddd3d54537332b396e55fbaefe34008
